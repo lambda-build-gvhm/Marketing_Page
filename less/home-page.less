@@ -1,0 +1,240 @@
+.div1 {
+    height: 100vh;
+    background: black;
+    background-image: url("../img/heatmap1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .div1-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80%;
+        
+        h1 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white;
+            font-size: 60px;
+            padding: 1%;
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 28px;
+            padding: 1%;
+        }
+    }
+}
+
+.div2 {
+    height: 100vh;
+    background: white;
+    background-image: url("../img/guns.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    // justify-content: center;
+    // flex-direction: column;
+
+    .info-bar {
+        height: auto;
+        background-color:black;
+        width: 100%;
+        opacity: 0.95;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0;
+        border-top: 7px solid #e44c65;
+
+        h2 {
+            font-size: 34px;
+            color: white;
+        }
+
+        .info-bar-left {
+            width: 28%;
+            padding:  2% 4%;
+            
+            h2 {
+                font-family: "Roboto", Helvetica, sans-serif;
+                font-size: 34px;
+                color: white;
+                padding: 1%;
+            }
+        }
+
+        .info-bar-right {
+            width: 36%;
+
+            p {
+                font-family: "Roboto", Helvetica, sans-serif;
+                color: white; 
+                font-size: 20px;
+                padding: 1%;
+            }
+        }
+    }
+}
+
+.div3 {
+    height: 100vh;
+    background: white;
+    background-image: url("../img/heatmap-overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .vertical-info-bar {
+        height: 100%;
+        width: 30%;
+        background-color:black;
+        border-left: 7px solid #5480f1;
+        opacity: 0.9;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 4%;
+            line-height: 1.25;
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 4%;
+            line-height: 1.25;
+
+        }
+}
+
+.div4 {
+    height: 100vh;
+    background: white;
+    background-image: url("../img/US-Census-Tract-Latino-Heat-Map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .vertical-info-bar {
+        height: 100%;
+        width: 30%;
+        background-color:black;
+        border-right: 7px solid #39c088;
+        opacity: 0.9;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 4%;
+            line-height: 1.25;
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 4%;
+            line-height: 1.25;
+
+        }
+}
+
+.div5 {
+    height: 100vh;
+    background: #040404;
+    padding-top: 6%;
+    margin: 0 0 4em 0;
+    position: relative;
+    text-align: center;
+
+
+    .div5-content {
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 1%;
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 1% 0 2% 0;;
+
+        }
+
+        &:after {
+            background: #e44c65;
+            content: '';
+            display: inline-block;
+            height: 0.2em;
+            max-width: 20em;
+            width: 75%;
+        }
+    }
+}
+
+.down-arrow {
+    width: 100px;
+    // position: absolute;
+    // bottom: 0;
+    text-align: center;
+}
+
+.down-arrow2 {
+    width: 100px;
+    // position: absolute;
+    // bottom: 0;
+    text-align: center;
+}
+
+.arrow-wrapper {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow2-wrapper {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
