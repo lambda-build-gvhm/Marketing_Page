@@ -228,9 +228,11 @@ nav .sign-in-btn:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 10;
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
 }
 .div1 .div1-wrapper {
   display: flex;
@@ -320,6 +322,11 @@ nav .sign-in-btn:hover {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
 }
 .div3 .iframe {
   width: 69%;
@@ -485,7 +492,6 @@ nav .sign-in-btn:hover {
   height: 100%;
 }
 .meet-our-team {
-  height: 100vh;
   background: #040404;
   padding-top: 6%;
   position: relative;
@@ -530,6 +536,23 @@ nav .sign-in-btn:hover {
 .meet-team-pictures .person {
   width: 32%;
   padding: 1%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .meet-team-pictures .person {
+    width: 48%;
+    padding: 1%;
+  }
+}
+@media (max-width: 665px) {
+  .meet-team-pictures .person {
+    width: 98%;
+    padding: 1%;
+  }
+}
+.meet-team-pictures .person img {
+  width: 225px;
+  border-radius: 50%;
 }
 .meet-team-pictures .person h2 {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -544,14 +567,19 @@ nav .sign-in-btn:hover {
 }
 .meet-team-pictures .person p {
   font-family: "Roboto", Helvetica, sans-serif;
-  color: white;
-  font-size: 20px;
-  padding: 1% 0 2% 0;
+  color: #e44c65;
+  font-size: 18px;
+  padding: 2% 0 4% 0;
 }
 @media (max-width: 1160px) {
   .meet-team-pictures .person p {
     font-size: 18px;
   }
+}
+.meet-team-pictures .person .icon-wrapper {
+  font-size: 2em;
+  color: white;
+  padding: 0 10px;
 }
 footer {
   background-color: #272833;

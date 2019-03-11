@@ -4,7 +4,7 @@
 }
 
 .meet-our-team {
-    height: 100vh;
+    // height: 100vh;
     background: #040404;
     padding-top: 6%;
     // margin: 0 0 4em 0;
@@ -56,6 +56,22 @@
         
         width: 32%;
         padding: 1%;
+        margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            width: 48%;
+            padding: 1%;
+        }
+
+        @media (max-width: 665px) {
+            width: 98%;
+            padding: 1%;
+        }
+
+        img {
+            width: 225px;
+            border-radius: 50%;
+        }
 
         h2 {
             font-family: "Roboto", Helvetica, sans-serif;
@@ -70,13 +86,19 @@
 
         p {
             font-family: "Roboto", Helvetica, sans-serif;
-            color: white; 
-            font-size: 20px;
-            padding: 1% 0 2% 0;;
+            color: #e44c65; 
+            font-size: 18px;
+            padding: 2% 0 4% 0;;
 
             @media (max-width: 1160px) {
                 font-size: 18px;
             }
+        }
+
+        .icon-wrapper {
+            font-size: 2em; 
+            color: white;
+            padding: 0 10px;
         }
     }
 }
