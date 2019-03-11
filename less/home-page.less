@@ -1,0 +1,313 @@
+.div1 {
+    height: 100vh;
+    background: black;
+    background-image: url("../img/heatmap1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+
+    .div1-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80%;
+        
+        h1 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white;
+            font-size: 60px;
+            padding: 1%;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 28px;
+            padding: 1%;
+            text-align: center;
+        }
+    }
+}
+
+.div2 {
+    height: 100vh;
+    background: white;
+    background-image: url("../img/guns.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    // position: relative;
+    // z-index: 10;
+
+    // box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    // -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    // -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+
+    .info-bar {
+        height: auto;
+        background-color:black;
+        width: 100%;
+        opacity: 0.95;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 3% 0 0 0;
+        border-top: 7px solid #e44c65;
+
+        .info-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        
+            .info-bar-left {
+                width: 34%;
+                padding:  2% 4%;
+                
+                h2 {
+                    font-family: "Roboto", Helvetica, sans-serif;
+                    font-size: 34px;
+                    color: white;
+                    padding: 1%;
+
+                    @media (max-width: 1160px) {
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .info-bar-right {
+                width: 42%;
+
+                p {
+                    font-family: "Roboto", Helvetica, sans-serif;
+                    color: white; 
+                    font-size: 20px;
+                    padding: 1%;
+
+                    @media (max-width: 1160px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.div3 {
+    height: 100vh;
+    background: white;
+    // background-image: url("../img/heatmap-overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+
+    .iframe {
+        // height: 100%;
+        width: 69%;
+    }
+
+    .vertical-info-bar {
+        height: 100%;
+        width: 30%;
+        background-color:black;
+        border-left: 7px solid #5480f1;
+        opacity: 0.9;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 2% 2% 8% 2%;
+            line-height: 1.25;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
+
+            }
+        
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 2%;
+            line-height: 1.25;
+
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.div4 {
+    height: 100vh;
+    background: white;
+    // background-image: url("../img/US-Census-Tract-Latino-Heat-Map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-start;
+
+    .iframe {
+        // height: 100%;
+        width: 69%;
+    }
+
+    .vertical-info-bar {
+        height: 100%;
+        width: 30%;
+        background-color:black;
+        border-right: 7px solid #39c088;
+        opacity: 0.9;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 2% 2% 8% 2%;
+            line-height: 1.25;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 4%;
+            line-height: 1.25;
+            
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
+        }
+}
+
+.div5 {
+    height: 100vh;
+    background: #040404;
+    padding-top: 6%;
+    position: relative;
+    text-align: center;
+
+
+    .div5-content {
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 34px;
+            color: white;
+            padding: 1%;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 1% 0 2% 0;;
+
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
+        }
+
+        &:after {
+            background: #e44c65;
+            content: '';
+            display: inline-block;
+            height: 0.2em;
+            max-width: 20em;
+            width: 75%;
+        }
+    }
+}
+
+.down-arrow {
+    width: 100px;
+    // position: absolute;
+    // bottom: 0;
+    text-align: center;
+}
+
+.down-arrow2 {
+    width: 100px;
+    // position: absolute;
+    // bottom: 0;
+    text-align: center;
+}
+
+.arrow-wrapper {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow2-wrapper {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Interactive iframe
+
+<iframe src="https://plot.ly/~krsmith/2.embed"         
+                height="600" width="100%"         
+                scrolling="no" seamless="seamless"         
+                frameBorder="0"> 
+            </iframe>
+
+            */
