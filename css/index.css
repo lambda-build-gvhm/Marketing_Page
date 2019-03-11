@@ -263,7 +263,7 @@ nav .sign-in-btn:hover {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .div2 .info-bar {
   height: auto;
@@ -315,13 +315,14 @@ nav .sign-in-btn:hover {
 .div3 {
   height: 100vh;
   background: white;
-  background-image: url("../img/heatmap-overlay.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+}
+.div3 .iframe {
+  width: 69%;
 }
 .div3 .vertical-info-bar {
   height: 100%;
@@ -363,13 +364,14 @@ nav .sign-in-btn:hover {
 .div4 {
   height: 100vh;
   background: white;
-  background-image: url("../img/US-Census-Tract-Latino-Heat-Map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+}
+.div4 .iframe {
+  width: 69%;
 }
 .div4 .vertical-info-bar {
   height: 100%;
@@ -469,6 +471,15 @@ nav .sign-in-btn:hover {
   display: flex;
   justify-content: center;
 }
+/* Interactive iframe
+
+<iframe src="https://plot.ly/~krsmith/2.embed"         
+                height="600" width="100%"         
+                scrolling="no" seamless="seamless"         
+                frameBorder="0"> 
+            </iframe>
+
+            */
 .about-us {
   background-color: #040404;
   height: 100%;
