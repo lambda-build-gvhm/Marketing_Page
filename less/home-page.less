@@ -23,6 +23,7 @@
             color: white;
             font-size: 60px;
             padding: 1%;
+            text-align: center;
         }
 
         p {
@@ -30,6 +31,7 @@
             color: white; 
             font-size: 28px;
             padding: 1%;
+            text-align: center;
         }
     }
 }
@@ -65,7 +67,7 @@
         }
 
         .info-bar-left {
-            width: 28%;
+            width: 34%;
             padding:  2% 4%;
             
             h2 {
@@ -73,17 +75,25 @@
                 font-size: 34px;
                 color: white;
                 padding: 1%;
+
+                @media (max-width: 1160px) {
+                    font-size: 28px;
+                }
             }
         }
 
         .info-bar-right {
-            width: 36%;
+            width: 42%;
 
             p {
                 font-family: "Roboto", Helvetica, sans-serif;
                 color: white; 
                 font-size: 20px;
                 padding: 1%;
+
+                @media (max-width: 1160px) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -117,19 +127,28 @@
             font-family: "Roboto", Helvetica, sans-serif;
             font-size: 34px;
             color: white;
-            padding: 4%;
+            padding: 2% 2% 8% 2%;
             line-height: 1.25;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
             }
-        }
+
+            }
+        
 
         p {
             font-family: "Roboto", Helvetica, sans-serif;
             color: white; 
             font-size: 20px;
-            padding: 4%;
+            padding: 2%;
             line-height: 1.25;
 
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
         }
+    }
 }
 
 .div4 {
@@ -160,8 +179,12 @@
             font-family: "Roboto", Helvetica, sans-serif;
             font-size: 34px;
             color: white;
-            padding: 4%;
+            padding: 2% 2% 8% 2%;
             line-height: 1.25;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
             }
         }
 
@@ -171,7 +194,10 @@
             font-size: 20px;
             padding: 4%;
             line-height: 1.25;
-
+            
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
         }
 }
 
@@ -190,6 +216,10 @@
             font-size: 34px;
             color: white;
             padding: 1%;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
         }
 
         p {
@@ -198,6 +228,9 @@
             font-size: 20px;
             padding: 1% 0 2% 0;;
 
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
         }
 
         &:after {
@@ -242,3 +275,4 @@
     display: flex;
     justify-content: center;
 }
+

@@ -208,6 +208,19 @@ nav a {
 nav a:hover {
   color: #e44c65;
 }
+nav .sign-in-btn {
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: #e44c65;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 4px;
+}
+nav .sign-in-btn:hover {
+  background-color: #e95d74;
+  cursor: pointer;
+}
 .div1 {
   height: 100vh;
   background: black;
@@ -232,12 +245,14 @@ nav a:hover {
   color: white;
   font-size: 60px;
   padding: 1%;
+  text-align: center;
 }
 .div1 .div1-wrapper p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 28px;
   padding: 1%;
+  text-align: center;
 }
 .div2 {
   height: 100vh;
@@ -267,7 +282,7 @@ nav a:hover {
   color: white;
 }
 .div2 .info-bar .info-bar-left {
-  width: 28%;
+  width: 34%;
   padding: 2% 4%;
 }
 .div2 .info-bar .info-bar-left h2 {
@@ -276,14 +291,24 @@ nav a:hover {
   color: white;
   padding: 1%;
 }
+@media (max-width: 1160px) {
+  .div2 .info-bar .info-bar-left h2 {
+    font-size: 28px;
+  }
+}
 .div2 .info-bar .info-bar-right {
-  width: 36%;
+  width: 42%;
 }
 .div2 .info-bar .info-bar-right p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
   padding: 1%;
+}
+@media (max-width: 1160px) {
+  .div2 .info-bar .info-bar-right p {
+    font-size: 18px;
+  }
 }
 .div3 {
   height: 100vh;
@@ -313,15 +338,25 @@ nav a:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
   color: white;
-  padding: 4%;
+  padding: 2% 2% 8% 2%;
   line-height: 1.25;
 }
-.div3 p {
+@media (max-width: 1160px) {
+  .div3 .vertical-info-bar h2 {
+    font-size: 28px;
+  }
+}
+.div3 .vertical-info-bar p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  padding: 4%;
+  padding: 2%;
   line-height: 1.25;
+}
+@media (max-width: 1160px) {
+  .div3 .vertical-info-bar p {
+    font-size: 18px;
+  }
 }
 .div4 {
   height: 100vh;
@@ -351,8 +386,13 @@ nav a:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
   color: white;
-  padding: 4%;
+  padding: 2% 2% 8% 2%;
   line-height: 1.25;
+}
+@media (max-width: 1160px) {
+  .div4 .vertical-info-bar h2 {
+    font-size: 28px;
+  }
 }
 .div4 p {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -360,6 +400,11 @@ nav a:hover {
   font-size: 20px;
   padding: 4%;
   line-height: 1.25;
+}
+@media (max-width: 1160px) {
+  .div4 p {
+    font-size: 18px;
+  }
 }
 .div5 {
   height: 100vh;
@@ -375,11 +420,21 @@ nav a:hover {
   color: white;
   padding: 1%;
 }
+@media (max-width: 1160px) {
+  .div5 .div5-content h2 {
+    font-size: 28px;
+  }
+}
 .div5 .div5-content p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
   padding: 1% 0 2% 0;
+}
+@media (max-width: 1160px) {
+  .div5 .div5-content p {
+    font-size: 18px;
+  }
 }
 .div5 .div5-content:after {
   background: #e44c65;
