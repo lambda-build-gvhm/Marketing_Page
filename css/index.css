@@ -215,6 +215,9 @@ nav a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .div1 .div1-wrapper {
   display: flex;
