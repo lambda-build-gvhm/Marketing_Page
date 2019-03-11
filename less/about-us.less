@@ -1,0 +1,82 @@
+.about-us {
+    background-color: #040404;
+    height: 100%;
+}
+
+.meet-our-team {
+    height: 100vh;
+    background: #040404;
+    padding-top: 6%;
+    // margin: 0 0 4em 0;
+    position: relative;
+    text-align: center;
+
+
+    .meet-our-team-content {
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 40px;
+            color: white;
+            padding: 1%;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 1% 0 2% 0;;
+
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
+        }
+
+        &:after {
+            background: #e44c65;
+            content: '';
+            display: inline-block;
+            height: 0.2em;
+            max-width: 20em;
+            width: 75%;
+        }
+    }
+}
+
+.meet-team-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2% 0;
+
+    .person {
+        
+        width: 32%;
+        padding: 1%;
+
+        h2 {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 40px;
+            color: white;
+            padding: 1%;
+
+            @media (max-width: 1160px) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            color: white; 
+            font-size: 20px;
+            padding: 1% 0 2% 0;;
+
+            @media (max-width: 1160px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

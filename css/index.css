@@ -263,7 +263,7 @@ nav .sign-in-btn:hover {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .div2 .info-bar {
   height: auto;
@@ -273,40 +273,42 @@ nav .sign-in-btn:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 3% 0;
+  align-items: flex-end;
+  padding: 3% 0 0 0;
   border-top: 7px solid #e44c65;
 }
-.div2 .info-bar h2 {
-  font-size: 34px;
-  color: white;
+.div2 .info-bar .info-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.div2 .info-bar .info-bar-left {
+.div2 .info-bar .info-content .info-bar-left {
   width: 34%;
   padding: 2% 4%;
 }
-.div2 .info-bar .info-bar-left h2 {
+.div2 .info-bar .info-content .info-bar-left h2 {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
   color: white;
   padding: 1%;
 }
 @media (max-width: 1160px) {
-  .div2 .info-bar .info-bar-left h2 {
+  .div2 .info-bar .info-content .info-bar-left h2 {
     font-size: 28px;
   }
 }
-.div2 .info-bar .info-bar-right {
+.div2 .info-bar .info-content .info-bar-right {
   width: 42%;
 }
-.div2 .info-bar .info-bar-right p {
+.div2 .info-bar .info-content .info-bar-right p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
   padding: 1%;
 }
 @media (max-width: 1160px) {
-  .div2 .info-bar .info-bar-right p {
+  .div2 .info-bar .info-content .info-bar-right p {
     font-size: 18px;
   }
 }
@@ -410,7 +412,6 @@ nav .sign-in-btn:hover {
   height: 100vh;
   background: #040404;
   padding-top: 6%;
-  margin: 0 0 4em 0;
   position: relative;
   text-align: center;
 }
@@ -467,6 +468,79 @@ nav .sign-in-btn:hover {
   bottom: 0;
   display: flex;
   justify-content: center;
+}
+.about-us {
+  background-color: #040404;
+  height: 100%;
+}
+.meet-our-team {
+  height: 100vh;
+  background: #040404;
+  padding-top: 6%;
+  position: relative;
+  text-align: center;
+}
+.meet-our-team .meet-our-team-content h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 40px;
+  color: white;
+  padding: 1%;
+}
+@media (max-width: 1160px) {
+  .meet-our-team .meet-our-team-content h2 {
+    font-size: 28px;
+  }
+}
+.meet-our-team .meet-our-team-content p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 1% 0 2% 0;
+}
+@media (max-width: 1160px) {
+  .meet-our-team .meet-our-team-content p {
+    font-size: 18px;
+  }
+}
+.meet-our-team .meet-our-team-content:after {
+  background: #e44c65;
+  content: '';
+  display: inline-block;
+  height: 0.2em;
+  max-width: 20em;
+  width: 75%;
+}
+.meet-team-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2% 0;
+}
+.meet-team-pictures .person {
+  width: 32%;
+  padding: 1%;
+}
+.meet-team-pictures .person h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 40px;
+  color: white;
+  padding: 1%;
+}
+@media (max-width: 1160px) {
+  .meet-team-pictures .person h2 {
+    font-size: 28px;
+  }
+}
+.meet-team-pictures .person p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 1% 0 2% 0;
+}
+@media (max-width: 1160px) {
+  .meet-team-pictures .person p {
+    font-size: 18px;
+  }
 }
 footer {
   background-color: #272833;
