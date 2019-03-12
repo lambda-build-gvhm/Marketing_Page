@@ -208,6 +208,7 @@ nav .mobile-icon {
   padding: 2%;
   background-color: #e44c65;
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 665px) {
   nav .mobile-icon {
@@ -233,7 +234,6 @@ nav a {
 @media (max-width: 665px) {
   nav a {
     margin-bottom: 8%;
-    display: none;
   }
 }
 nav a:hover {
@@ -252,6 +252,43 @@ nav .sign-in-btn:hover {
   background-color: #e47587;
   cursor: pointer;
 }
+@media (max-width: 665px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+.drop-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.drop-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0.95;
+}
+@media (max-width: 665px) {
+  .drop-menu {
+    display: none;
+  }
+}
+.drop-nav a {
+  padding: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #040404;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+.drop-nav a:hover {
+  color: #040404;
+  background-color: #e47587;
+}
 .div1 {
   height: 100vh;
   background: black;
@@ -260,11 +297,15 @@ nav .sign-in-btn:hover {
   background-position: center;
   background-size: cover;
   width: 100%;
+  transition: background-image 1.5s ease-in-out;
   position: relative;
   z-index: 12;
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.div1:hover {
+  background-image: url("../img/Heatmap-sat50.jpg");
 }
 .div1 .div1-wrapper {
   display: flex;
@@ -598,16 +639,27 @@ nav .sign-in-btn:hover {
   display: flex;
   justify-content: center;
 }
+.unhide {
+  display: block;
+}
 .about-us {
   background-color: #040404;
   height: 100%;
 }
 .meet-our-team {
   background: #040404;
-  padding-top: 6%;
-  margin-top: 4%;
-  position: relative;
+  padding-top: 4%;
   text-align: center;
+}
+@media (max-width: 1160px) {
+  .meet-our-team {
+    font-size: 32px;
+  }
+}
+@media (max-width: 665px) {
+  .meet-our-team {
+    margin-top: 6%;
+  }
 }
 .meet-our-team .meet-our-team-content h2 {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -617,7 +669,7 @@ nav .sign-in-btn:hover {
 }
 @media (max-width: 1160px) {
   .meet-our-team .meet-our-team-content h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .meet-our-team .meet-our-team-content p {
@@ -629,6 +681,11 @@ nav .sign-in-btn:hover {
 @media (max-width: 1160px) {
   .meet-our-team .meet-our-team-content p {
     font-size: 18px;
+  }
+}
+@media (max-width: 665px) {
+  .meet-our-team .meet-our-team-content p {
+    margin-top: 6%;
   }
 }
 .meet-our-team .meet-our-team-content:after {
@@ -697,6 +754,7 @@ footer {
   background-color: #272833;
 }
 footer h2 {
+  font-size: 14px;
   padding: 2%;
   color: white;
   text-align: center;

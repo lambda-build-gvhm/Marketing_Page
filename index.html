@@ -31,15 +31,26 @@
                 <a href="#">Login</a>
             </nav> -->
 
-            <div class="div1">
+            <div class="div1" id="div1">
                 <nav>
                     <div class="mobile-icon">  
                         <img src="img/menu.png" class="mobile-menu-icon">
-                    </div> 
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="https://gun-violence-heat-map.netlify.com/"><div class="sign-in-btn">Sign&nbsp;In</div></a>
+                    </div>
+                    <a href="index.html" class = "hide-mobile">Home</a>
+                    <a href="about.html" class = "hide-mobile">About</a>
+                    <a href="https://gun-violence-heat-map.netlify.com/" class = "hide-mobile"><div class="sign-in-btn">Sign&nbsp;In</div></a>
                 </nav>
+
+                <!-- Hidden mobile menu dropdown START-->
+                <div class="drop-menu">
+                    <nav class="drop-nav">
+                        <a href="services.html" class="link1">Home</a>
+                        <a href="#" class="link4">About</a>
+                        <a href="#" class="drop-link5">Sign In</a>
+                    </nav>
+                </div>
+                <!-- Hidden mobile menu dropdown END-->
+
                 <div class="div1-wrapper">
                     <h1>Gun Violence Heatmap</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

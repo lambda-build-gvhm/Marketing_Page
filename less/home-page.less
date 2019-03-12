@@ -6,6 +6,11 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    transition: background-image 1.5s ease-in-out;
+
+    &:hover {
+        background-image: url("../img/Heatmap-sat50.jpg");
+    }
 
     position: relative;
     z-index: 12;
@@ -382,3 +387,7 @@
 // .hideme {
 //     opacity:0;
 // }
+
+.unhide {
+	display: block;
+}
