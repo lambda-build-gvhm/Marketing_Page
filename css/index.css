@@ -199,9 +199,14 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
+nav .mobile-menu-icon {
+  display: none;
+  width: 65px;
+  margin: 2%;
+}
 @media (max-width: 665px) {
-  nav {
-    margin-bottom: 8%;
+  nav .mobile-menu-icon {
+    display: block;
   }
 }
 nav a {
@@ -210,6 +215,12 @@ nav a {
   color: white;
   font-size: 24px;
   padding: 10px;
+}
+@media (max-width: 665px) {
+  nav a {
+    margin-bottom: 8%;
+    display: none;
+  }
 }
 nav a:hover {
   color: #e44c65;

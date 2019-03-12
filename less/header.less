@@ -3,8 +3,19 @@ nav {
     justify-content: flex-end;
     align-items: center;
 
-    @media (max-width: 665px) {
-        margin-bottom: 8%;
+    // @media (max-width: 665px) {
+    //     margin-bottom: 8%;
+    //     display: none;
+    // }
+
+    .mobile-menu-icon {
+        display: none;
+        width: 65px;
+        margin: 2%;
+        
+        @media (max-width: 665px) {
+            display: block;
+        }
     }
 
     a {
@@ -13,6 +24,11 @@ nav {
         color: white;
         font-size: 24px;
         padding: 10px;
+
+        @media (max-width: 665px) {
+            margin-bottom: 8%;
+            display: none;
+        }
     }
 
     a:hover {
