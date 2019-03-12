@@ -705,18 +705,20 @@ nav .sign-in-btn:hover {
 .meet-team-pictures .person {
   width: 32%;
   padding: 1%;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 @media (max-width: 1024px) {
   .meet-team-pictures .person {
     width: 48%;
     padding: 1%;
+    margin: 40px 0;
   }
 }
 @media (max-width: 665px) {
   .meet-team-pictures .person {
     width: 98%;
     padding: 1%;
+    margin: 40px 0;
   }
 }
 .meet-team-pictures .person img {

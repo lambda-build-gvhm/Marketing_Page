@@ -1,3 +1,16 @@
+let thing = document.querySelector('#div1');
+
+window.addEventListener( "load", function(event) {
+    console.log(thing)
+})
+
+const mobileDropNav = document.querySelector('.drop-menu');
+const mobileMenuButton = document.querySelector('.mobile-menu-icon');
+mobileMenuButton.addEventListener('click', function(){
+  mobileDropNav.classList.toggle('unhide');
+});
+
+
 // $(document).ready(function() {
 //     var timeToDisplay = 2000;
 
@@ -30,15 +43,3 @@
 
 //     run();
 // })​;
-
-// let pulse = document.querySelector('#div1');
-
-// window.addEventListener( "load", function(event) {
-//     console.log(pulse)
-// })
-
-const mobileDropNav = document.querySelector('.drop-menu');
-const mobileMenuButton = document.querySelector('.mobile-menu-icon');
-mobileMenuButton.addEventListener('click', function(){
-  mobileDropNav.classList.toggle('unhide');
-});
