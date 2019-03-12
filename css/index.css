@@ -192,18 +192,24 @@ strong {
 .container {
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 665px) {
+  nav {
+    margin-bottom: 8%;
+  }
+}
 nav a {
   font-family: "Roboto", Helvetica, sans-serif;
   text-decoration: none;
   color: white;
   font-size: 24px;
-  padding: 1.5% 2%;
+  padding: 10px;
 }
 nav a:hover {
   color: #e44c65;
@@ -250,12 +256,26 @@ nav .sign-in-btn:hover {
   padding: 1%;
   text-align: center;
 }
+@media (max-width: 745px) {
+  .div1 .div1-wrapper h1 {
+    font-size: 46px;
+  }
+}
 .div1 .div1-wrapper p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 28px;
   padding: 1%;
+  line-height: 1.25;
   text-align: center;
+  margin-bottom: 3%;
+  color: #e44c65;
+}
+@media (max-width: 745px) {
+  .div1 .div1-wrapper p {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
 }
 .div2 {
   height: 100vh;
@@ -292,11 +312,6 @@ nav .sign-in-btn:hover {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1160px) {
-  .div2 .info-bar .info-content {
-    flex-direction: column;
-  }
-}
 .div2 .info-bar .info-content .info-bar-left {
   width: 34%;
   padding: 2% 4%;
@@ -304,7 +319,7 @@ nav .sign-in-btn:hover {
 @media (max-width: 1160px) {
   .div2 .info-bar .info-content .info-bar-left {
     width: 100%;
-    padding: 4% 8% 2% 8%;
+    padding: 4% 8% 0 8%;
   }
 }
 .div2 .info-bar .info-content .info-bar-left h2 {

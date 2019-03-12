@@ -28,6 +28,10 @@
             font-size: 60px;
             padding: 1%;
             text-align: center;
+
+            @media (max-width: 745px) {
+                font-size: 46px; 
+            }
         }
 
         p {
@@ -35,7 +39,15 @@
             color: white; 
             font-size: 28px;
             padding: 1%;
+            line-height: 1.25;
             text-align: center;
+            margin-bottom: 3%;
+            color: #e44c65;
+
+            @media (max-width: 745px) {
+                font-size: 18px; 
+                padding: 1% 2%;
+            }
         }
     }
 }
@@ -77,10 +89,6 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-
-            @media (max-width: 1160px) {
-                flex-direction: column;
-            }
         
             .info-bar-left {
                 width: 34%;
@@ -88,7 +96,7 @@
 
                 @media (max-width: 1160px) {
                     width: 100%;
-                    padding: 4% 8% 2% 8%;
+                    padding: 4% 8% 0 8%;
                 }
                 
                 h2 {
