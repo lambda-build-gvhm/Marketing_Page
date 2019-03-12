@@ -1,7 +1,9 @@
 let thing = document.querySelector('#div1');
+let hover_thing = document.querySelector('#div1:hover')
 
 window.addEventListener( "load", function(event) {
-    console.log(thing)
+    thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
+    // thing.style.backgroundImage = "url('img/heatmap1.jpg')";
 })
 
 const mobileDropNav = document.querySelector('.drop-menu');
