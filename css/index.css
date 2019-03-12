@@ -199,13 +199,27 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
-nav .mobile-menu-icon {
+@media (max-width: 665px) {
+  nav {
+    background-color: #040404;
+  }
+}
+nav .mobile-icon {
+  padding: 2%;
+  background-color: #e44c65;
   display: none;
-  width: 65px;
-  margin: 2%;
 }
 @media (max-width: 665px) {
-  nav .mobile-menu-icon {
+  nav .mobile-icon {
+    display: block;
+  }
+}
+nav .mobile-icon .mobile-menu-icon {
+  display: none;
+  width: 40px;
+}
+@media (max-width: 665px) {
+  nav .mobile-icon .mobile-menu-icon {
     display: block;
   }
 }

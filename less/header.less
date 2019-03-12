@@ -7,14 +7,29 @@ nav {
     //     margin-bottom: 8%;
     //     display: none;
     // }
+    
+    @media (max-width: 665px) {
+        // justify-content: flex-start;
+        background-color: #040404;
+    }
 
-    .mobile-menu-icon {
+    .mobile-icon{
+        padding: 2%;
+        background-color: #e44c65;
         display: none;
-        width: 65px;
-        margin: 2%;
-        
+
         @media (max-width: 665px) {
             display: block;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            width: 40px;
+            // margin: 2%;
+            
+            @media (max-width: 665px) {
+                display: block;
+            }
         }
     }
 
