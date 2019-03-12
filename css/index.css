@@ -605,6 +605,7 @@ nav .sign-in-btn:hover {
 .meet-our-team {
   background: #040404;
   padding-top: 6%;
+  margin-top: 4%;
   position: relative;
   text-align: center;
 }
@@ -623,7 +624,7 @@ nav .sign-in-btn:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  padding: 1% 0 2% 0;
+  padding: 2%;
 }
 @media (max-width: 1160px) {
   .meet-our-team .meet-our-team-content p {
