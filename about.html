@@ -23,10 +23,23 @@
     <body>
         <div class="container about-us">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="https://gun-violence-heat-map.netlify.com/"><div class="sign-in-btn">Sign In</div></a>
+                <div class="mobile-icon">  
+                    <img src="img/menu.png" class="mobile-menu-icon">
+                </div> 
+                <a href="index.html" class = "hide-mobile">Home</a>
+                <a href="about.html" class = "hide-mobile">About</a>
+                <a href="https://gun-violence-heat-map.netlify.com/" class = "hide-mobile"><div class="sign-in-btn">Sign In</div></a>
             </nav>
+
+            <!-- Hidden mobile menu dropdown START-->
+            <div class="drop-menu">
+                <nav class="drop-nav">
+                    <a href="index.html" class="link1">Home</a>
+                    <a href="#" class="link4">About</a>
+                    <a href="#" class="drop-link5">Sign In</a>
+                </nav>
+            </div>
+            <!-- Hidden mobile menu dropdown END-->
             <div class="meet-our-team">
                 <div class="meet-our-team-content">   
                     <h2>
@@ -122,8 +135,10 @@
                         </span>
 
                     </div>
-                
                 </div>
+            <footer>
+                <h2> Copyright 2019</h2>
+            </footer>
             </div>
         </div>
     </body>

@@ -2,13 +2,46 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+
     
+    @media (max-width: 665px) {
+        // justify-content: flex-start;
+        background-color: #040404;
+    }
+
+    .mobile-icon{
+        padding: 2%;
+        background-color: #e44c65;
+        display: none;
+        cursor:pointer;
+
+        @media (max-width: 665px) {
+            display: block;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+            width: 40px;
+            // margin: 2%;
+            
+            @media (max-width: 665px) {
+                display: block;
+            }
+        }
+    }
+
     a {
         font-family: "Roboto", Helvetica, sans-serif;
         text-decoration: none;
         color: white;
         font-size: 24px;
-        padding: 1.5% 2%;
+        padding: 10px;
+
+        @media (max-width: 665px) {
+            margin-bottom: 8%;
+            // display: none;
+        }
     }
 
     a:hover {
@@ -27,8 +60,57 @@ nav {
 
     
         &:hover {
-            background-color: #e95d74;
+            background-color: #e47587;
             cursor: pointer;
         }
+    }
+}
+
+.hide-mobile {
+    @media (max-width: 665px) {
+        display: none;
+    }
+}
+
+.drop-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+// @media(min-width: 740px) {
+//     .drop-nav {
+//         display: block;
+//     }
+// }
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    opacity: 0.95;
+
+    @media (max-width: 665px) {
+        display: none;
+    }
+    
+}
+
+
+.drop-nav a {
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #040404;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ccc;
+
+    &:hover {
+        color: #040404;
+        background-color: rgb(228, 117, 135, 0.9);
     }
 }

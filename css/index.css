@@ -192,18 +192,49 @@ strong {
 .container {
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 665px) {
+  nav {
+    background-color: #040404;
+  }
+}
+nav .mobile-icon {
+  padding: 2%;
+  background-color: #e44c65;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 665px) {
+  nav .mobile-icon {
+    display: block;
+  }
+}
+nav .mobile-icon .mobile-menu-icon {
+  display: none;
+  width: 40px;
+}
+@media (max-width: 665px) {
+  nav .mobile-icon .mobile-menu-icon {
+    display: block;
+  }
+}
 nav a {
   font-family: "Roboto", Helvetica, sans-serif;
   text-decoration: none;
   color: white;
   font-size: 24px;
-  padding: 1.5% 2%;
+  padding: 10px;
+}
+@media (max-width: 665px) {
+  nav a {
+    margin-bottom: 8%;
+  }
 }
 nav a:hover {
   color: #e44c65;
@@ -218,8 +249,45 @@ nav .sign-in-btn {
   border-radius: 4px;
 }
 nav .sign-in-btn:hover {
-  background-color: #e95d74;
+  background-color: #e47587;
   cursor: pointer;
+}
+@media (max-width: 665px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+.drop-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.drop-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  opacity: 0.95;
+}
+@media (max-width: 665px) {
+  .drop-menu {
+    display: none;
+  }
+}
+.drop-nav a {
+  padding: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #040404;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+.drop-nav a:hover {
+  color: #040404;
+  background-color: #e47587;
 }
 .div1 {
   height: 100vh;
@@ -228,8 +296,10 @@ nav .sign-in-btn:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+  transition: background-image 1.5s ease-in-out;
   position: relative;
-  z-index: 10;
+  z-index: 12;
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
@@ -249,12 +319,26 @@ nav .sign-in-btn:hover {
   padding: 1%;
   text-align: center;
 }
+@media (max-width: 745px) {
+  .div1 .div1-wrapper h1 {
+    font-size: 46px;
+  }
+}
 .div1 .div1-wrapper p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 28px;
   padding: 1%;
+  line-height: 1.25;
   text-align: center;
+  margin-bottom: 3%;
+  color: #e44c65;
+}
+@media (max-width: 745px) {
+  .div1 .div1-wrapper p {
+    font-size: 18px;
+    padding: 1% 2%;
+  }
 }
 .div2 {
   height: 100vh;
@@ -263,9 +347,15 @@ nav .sign-in-btn:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  position: relative;
+  z-index: 11;
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
 }
 .div2 .info-bar {
   height: auto;
@@ -289,6 +379,12 @@ nav .sign-in-btn:hover {
   width: 34%;
   padding: 2% 4%;
 }
+@media (max-width: 1160px) {
+  .div2 .info-bar .info-content .info-bar-left {
+    width: 100%;
+    padding: 4% 8% 0 8%;
+  }
+}
 .div2 .info-bar .info-content .info-bar-left h2 {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
@@ -303,6 +399,12 @@ nav .sign-in-btn:hover {
 .div2 .info-bar .info-content .info-bar-right {
   width: 42%;
 }
+@media (max-width: 1160px) {
+  .div2 .info-bar .info-content .info-bar-right {
+    width: 100%;
+    padding: 0 8% 4% 8%;
+  }
+}
 .div2 .info-bar .info-content .info-bar-right p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
@@ -314,22 +416,46 @@ nav .sign-in-btn:hover {
     font-size: 18px;
   }
 }
+@media (max-width: 980px) {
+  .div2 .info-bar .info-content .info-bar-right p {
+    font-size: 18px;
+  }
+}
 .div3 {
   height: 100vh;
   background: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
   z-index: 10;
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
 }
+@media (max-width: 1056px) {
+  .div3 {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .div3 .iframe {
-  width: 69%;
+  height: 100%;
+  width: 70%;
+}
+.div3 .iframe img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1056px) {
+  .div3 .iframe {
+    width: 100%;
+    height: auto;
+  }
 }
 .div3 .vertical-info-bar {
   height: 100%;
@@ -344,6 +470,14 @@ nav .sign-in-btn:hover {
   align-items: center;
   padding: 2%;
 }
+@media (max-width: 1056px) {
+  .div3 .vertical-info-bar {
+    width: 100%;
+    border-top: 7px solid #5480f1;
+    border-left: none;
+    padding: 4% 8% 4% 8%;
+  }
+}
 .div3 .vertical-info-bar h2 {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
@@ -354,6 +488,7 @@ nav .sign-in-btn:hover {
 @media (max-width: 1160px) {
   .div3 .vertical-info-bar h2 {
     font-size: 28px;
+    padding: 2%;
   }
 }
 .div3 .vertical-info-bar p {
@@ -374,11 +509,27 @@ nav .sign-in-btn:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 1056px) {
+  .div4 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
 .div4 .iframe {
-  width: 69%;
+  width: 70%;
+}
+@media (max-width: 1056px) {
+  .div4 .iframe {
+    width: 100%;
+  }
+}
+.div4 .iframe img {
+  height: 100%;
+  width: 100%;
 }
 .div4 .vertical-info-bar {
   height: 100%;
@@ -393,6 +544,14 @@ nav .sign-in-btn:hover {
   align-items: center;
   padding: 2%;
 }
+@media (max-width: 1056px) {
+  .div4 .vertical-info-bar {
+    width: 100%;
+    border-right: none;
+    border-top: 7px solid #39c088;
+    padding: 4% 8% 4% 8%;
+  }
+}
 .div4 .vertical-info-bar h2 {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 34px;
@@ -403,13 +562,14 @@ nav .sign-in-btn:hover {
 @media (max-width: 1160px) {
   .div4 .vertical-info-bar h2 {
     font-size: 28px;
+    padding: 2%;
   }
 }
 .div4 p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  padding: 4%;
+  padding: 2%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
@@ -478,24 +638,27 @@ nav .sign-in-btn:hover {
   display: flex;
   justify-content: center;
 }
-/* Interactive iframe
-
-<iframe src="https://plot.ly/~krsmith/2.embed"         
-                height="600" width="100%"         
-                scrolling="no" seamless="seamless"         
-                frameBorder="0"> 
-            </iframe>
-
-            */
+.unhide {
+  display: block;
+}
 .about-us {
   background-color: #040404;
   height: 100%;
 }
 .meet-our-team {
   background: #040404;
-  padding-top: 6%;
-  position: relative;
+  padding-top: 4%;
   text-align: center;
+}
+@media (max-width: 1160px) {
+  .meet-our-team {
+    font-size: 32px;
+  }
+}
+@media (max-width: 665px) {
+  .meet-our-team {
+    margin-top: 6%;
+  }
 }
 .meet-our-team .meet-our-team-content h2 {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -505,18 +668,23 @@ nav .sign-in-btn:hover {
 }
 @media (max-width: 1160px) {
   .meet-our-team .meet-our-team-content h2 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 .meet-our-team .meet-our-team-content p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  padding: 1% 0 2% 0;
+  padding: 2%;
 }
 @media (max-width: 1160px) {
   .meet-our-team .meet-our-team-content p {
     font-size: 18px;
+  }
+}
+@media (max-width: 665px) {
+  .meet-our-team .meet-our-team-content p {
+    margin-top: 6%;
   }
 }
 .meet-our-team .meet-our-team-content:after {
@@ -536,18 +704,20 @@ nav .sign-in-btn:hover {
 .meet-team-pictures .person {
   width: 32%;
   padding: 1%;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 @media (max-width: 1024px) {
   .meet-team-pictures .person {
     width: 48%;
     padding: 1%;
+    margin: 40px 0;
   }
 }
 @media (max-width: 665px) {
   .meet-team-pictures .person {
     width: 98%;
     padding: 1%;
+    margin: 40px 0;
   }
 }
 .meet-team-pictures .person img {
@@ -585,6 +755,7 @@ footer {
   background-color: #272833;
 }
 footer h2 {
+  font-size: 14px;
   padding: 2%;
   color: white;
   text-align: center;

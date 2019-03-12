@@ -1,0 +1,47 @@
+let thing = document.querySelector('#div1');
+let hover_thing = document.querySelector('#div1:hover')
+
+window.addEventListener( "load", function(event) {
+    thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
+    // thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+})
+
+const mobileDropNav = document.querySelector('.drop-menu');
+const mobileMenuButton = document.querySelector('.mobile-menu-icon');
+mobileMenuButton.addEventListener('click', function(){
+  mobileDropNav.classList.toggle('unhide');
+});
+
+
+// $(document).ready(function() {
+//     var timeToDisplay = 2000;
+
+//     var slideshow = $('#div1');
+//     var urls = [
+//        '../img/heatmap1.jpg',
+//        '../img/Heatmap-sat50.jpg',
+//     ];
+
+//     var index = 0;
+//     var transition = function() {
+//         var url = urls[index];
+
+//         slideshow.css('background-image', 'url(' + url + ')');
+
+//         index = index + 1;
+//         if (index > urls.length - 1) {
+//             index = 0;
+//         }
+//     };
+
+//     var run = function() {
+//         transition();
+//         slideshow.fadeIn('slow', function() {
+//             setTimeout(function() {
+//                 slideshow.fadeOut('slow', run);
+//             }, timeToDisplay);
+//         });
+//     }
+
+//     run();
+// })​;
