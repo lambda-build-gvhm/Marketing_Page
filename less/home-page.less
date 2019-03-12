@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    width: 100%;
+
     position: relative;
-    z-index: 10;
+    z-index: 12;
 
     box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
     -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
@@ -46,16 +47,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+ 
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
 
-    // position: relative;
-    // z-index: 10;
+    position: relative;
+    z-index: 11;
 
-    // box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
-    // -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
-    // -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
 
     .info-bar {
         height: auto;
@@ -74,10 +77,19 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+
+            @media (max-width: 1160px) {
+                flex-direction: column;
+            }
         
             .info-bar-left {
                 width: 34%;
                 padding:  2% 4%;
+
+                @media (max-width: 1160px) {
+                    width: 100%;
+                    padding: 4% 8% 2% 8%;
+                }
                 
                 h2 {
                     font-family: "Roboto", Helvetica, sans-serif;
@@ -94,6 +106,11 @@
             .info-bar-right {
                 width: 42%;
 
+                @media (max-width: 1160px) {
+                    width: 100%;
+                    padding: 0 8% 4% 8%;
+                }
+
                 p {
                     font-family: "Roboto", Helvetica, sans-serif;
                     color: white; 
@@ -101,6 +118,10 @@
                     padding: 1%;
 
                     @media (max-width: 1160px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: 980px) {
                         font-size: 18px;
                     }
                 }
@@ -116,9 +137,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-
+    // flex-direction: column-reverse;
+    justify-content: space-between;
     position: relative;
     z-index: 10;
 
@@ -126,11 +149,25 @@
     -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
 
-    .iframe {
-        // height: 100%;
-        width: 69%;
+    @media (max-width: 1056px) {
+        flex-direction: column; 
+        height: auto;  
     }
 
+    .iframe {
+        height: 100%;
+        width: 68%;
+
+        img {
+            // height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 1056px) {
+            width: 100%;
+            height: auto;
+        }
+    }
     .vertical-info-bar {
         height: 100%;
         width: 30%;
@@ -144,6 +181,13 @@
         align-items: center;
         padding: 2%;
 
+        @media (max-width: 1056px) {
+            width: 100%;
+            border-top: 7px solid #5480f1;
+            border-left: none;
+            padding: 4% 8% 4% 8%;
+        }
+
         h2 {
             font-family: "Roboto", Helvetica, sans-serif;
             font-size: 34px;
@@ -153,6 +197,7 @@
 
             @media (max-width: 1160px) {
                 font-size: 28px;
+                padding: 2%;
             }
 
             }
@@ -179,13 +224,29 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     // justify-content: flex-start;
 
+
+    @media (max-width: 1056px) {
+        flex-direction: column-reverse; 
+        height: auto;  
+    }
+
     .iframe {
         // height: 100%;
         width: 69%;
+
+        @media (max-width: 1056px) {
+            width: 100%; 
+        }
+
+        img {
+            // height: 100%;
+            width: 100%;
+        }
     }
 
     .vertical-info-bar {
@@ -201,6 +262,13 @@
         align-items: center;
         padding: 2%;
 
+        @media (max-width: 1056px) {
+            width: 100%;
+            border-right: none;
+            border-top: 7px solid #39c088;
+            padding: 4% 8% 4% 8%;
+        }
+
         h2 {
             font-family: "Roboto", Helvetica, sans-serif;
             font-size: 34px;
@@ -210,6 +278,8 @@
 
             @media (max-width: 1160px) {
                 font-size: 28px;
+                padding: 2%;
+
             }
             }
         }
@@ -218,7 +288,7 @@
             font-family: "Roboto", Helvetica, sans-serif;
             color: white; 
             font-size: 20px;
-            padding: 4%;
+            padding: 2%;
             line-height: 1.25;
             
             @media (max-width: 1160px) {
@@ -300,14 +370,3 @@
     display: flex;
     justify-content: center;
 }
-
-
-/* Interactive iframe
-
-<iframe src="https://plot.ly/~krsmith/2.embed"         
-                height="600" width="100%"         
-                scrolling="no" seamless="seamless"         
-                frameBorder="0"> 
-            </iframe>
-
-            */
