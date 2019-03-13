@@ -316,7 +316,7 @@ nav .sign-in-btn:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 60px;
-  padding: 1%;
+  padding: 10px 10px 0 10px;
   text-align: center;
 }
 @media (max-width: 745px) {
@@ -328,7 +328,7 @@ nav .sign-in-btn:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 28px;
-  padding: 1%;
+  padding: 20px;
   line-height: 1.25;
   text-align: center;
   margin-bottom: 3%;
@@ -459,7 +459,7 @@ nav .sign-in-btn:hover {
 }
 .div3 .iframe img {
   width: 100%;
-  margin-top: 12.5%;
+  margin-top: 1%;
   display: none;
 }
 @media (max-width: 1056px) {
@@ -547,7 +547,7 @@ nav .sign-in-btn:hover {
 }
 .div4 .iframe img {
   width: 100%;
-  margin-top: 12.5%;
+  margin-top: 1%;
   display: none;
 }
 @media (max-width: 1056px) {
@@ -804,7 +804,7 @@ nav .sign-in-btn:hover {
   }
 }
 .modals .card img {
-  border-bottom: 4px solid #5480f1;
+  border-bottom: 4px solid #39c088;
   width: 100%;
 }
 .modals .card p {
