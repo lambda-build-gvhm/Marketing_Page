@@ -297,7 +297,7 @@ nav .sign-in-btn:hover {
   background-position: center;
   background-size: cover;
   width: 100%;
-  transition: background-image 1.5s ease-in-out;
+  transition: background-image 0.75s ease-in-out;
   position: relative;
   z-index: 12;
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);

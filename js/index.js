@@ -1,47 +1,52 @@
 let thing = document.querySelector('#div1');
-let hover_thing = document.querySelector('#div1:hover')
+// let loop = 3;
+//set Interval and then clear interval
 
 window.addEventListener( "load", function(event) {
-    thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
-    // thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+    let num = 0;
+const interval = setInterval(()=> {
+    if(num===2) {
+        clearInterval(interval);
+        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+    } else if (num % 2 ===0){
+        ++num;
+        console.log(num);
+        thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
+    } else {
+        console.log(num);
+        ++num;
+        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+    }
+
+        
+}, 800);
 })
 
+// window.addEventListener( "load", function(event) {
+    //     let num = 0;
+    // const interval = setInterval(()=> {
+    //     if(num===3) {
+    //         clearInterval(interval);
+    //     } else{
+    //         ++num;
+    //         thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";    }
+    // }, 1000);
+    // })
+
+// let num = 0;
+// const interval = setInterval(()=> {
+//     if(num===3) {
+//         clearInterval(interval);
+//     } else{
+//         ++num;
+//         console.log(num);  
+//     }
+// }, 1000);
+
+//Mobile Dropdown
 const mobileDropNav = document.querySelector('.drop-menu');
 const mobileMenuButton = document.querySelector('.mobile-menu-icon');
 mobileMenuButton.addEventListener('click', function(){
   mobileDropNav.classList.toggle('unhide');
 });
 
-
-// $(document).ready(function() {
-//     var timeToDisplay = 2000;
-
-//     var slideshow = $('#div1');
-//     var urls = [
-//        '../img/heatmap1.jpg',
-//        '../img/Heatmap-sat50.jpg',
-//     ];
-
-//     var index = 0;
-//     var transition = function() {
-//         var url = urls[index];
-
-//         slideshow.css('background-image', 'url(' + url + ')');
-
-//         index = index + 1;
-//         if (index > urls.length - 1) {
-//             index = 0;
-//         }
-//     };
-
-//     var run = function() {
-//         transition();
-//         slideshow.fadeIn('slow', function() {
-//             setTimeout(function() {
-//                 slideshow.fadeOut('slow', run);
-//             }, timeToDisplay);
-//         });
-//     }
-
-//     run();
-// })​;
