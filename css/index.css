@@ -297,7 +297,7 @@ nav .sign-in-btn:hover {
   background-position: center;
   background-size: cover;
   width: 100%;
-  transition: background-image 1.5s ease-in-out;
+  transition: background-image 0.75s ease-in-out;
   position: relative;
   z-index: 12;
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
@@ -341,13 +341,14 @@ nav .sign-in-btn:hover {
   }
 }
 .div2 {
-  height: 100vh;
-  background: white;
+  height: auto;
+  background: #111111;
   background-image: url("../img/guns.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding-top: 20%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -356,6 +357,11 @@ nav .sign-in-btn:hover {
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 665px) {
+  .div2 {
+    padding-top: 40%;
+  }
 }
 .div2 .info-bar {
   height: auto;
@@ -423,7 +429,7 @@ nav .sign-in-btn:hover {
 }
 .div3 {
   height: 100vh;
-  background: white;
+  background: #111111;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -448,8 +454,8 @@ nav .sign-in-btn:hover {
   width: 70%;
 }
 .div3 .iframe img {
-  height: 100%;
   width: 100%;
+  margin-top: 12.5%;
 }
 @media (max-width: 1056px) {
   .div3 .iframe {
@@ -505,7 +511,7 @@ nav .sign-in-btn:hover {
 }
 .div4 {
   height: 100vh;
-  background: white;
+  background: #111111;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -528,8 +534,8 @@ nav .sign-in-btn:hover {
   }
 }
 .div4 .iframe img {
-  height: 100%;
   width: 100%;
+  margin-top: 12.5%;
 }
 .div4 .vertical-info-bar {
   height: 100%;
@@ -578,11 +584,17 @@ nav .sign-in-btn:hover {
   }
 }
 .div5 {
-  height: 100vh;
+  height: auto;
   background: #040404;
-  padding-top: 6%;
+  padding-top: 4%;
   position: relative;
   text-align: center;
+  border-top: 7px solid #272833;
+}
+@media (max-width: 665px) {
+  .div5 .div5-content {
+    padding: 2% 3%;
+  }
 }
 .div5 .div5-content h2 {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -605,14 +617,6 @@ nav .sign-in-btn:hover {
   .div5 .div5-content p {
     font-size: 18px;
   }
-}
-.div5 .div5-content:after {
-  background: #e44c65;
-  content: '';
-  display: inline-block;
-  height: 0.2em;
-  max-width: 20em;
-  width: 75%;
 }
 .down-arrow {
   width: 100px;
@@ -751,6 +755,39 @@ nav .sign-in-btn:hover {
   color: white;
   padding: 0 10px;
 }
+.modals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+  height: auto;
+}
+@media (max-width: 665px) {
+  .modals {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.modals .card {
+  height: auto;
+  width: 30%;
+  margin: 1%;
+}
+@media (max-width: 665px) {
+  .modals .card {
+    width: 90%;
+  }
+}
+.modals .card img {
+  border-bottom: 4px solid #5480f1;
+  width: 100%;
+}
+.modals .card p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  padding: 3%;
+}
 footer {
   background-color: #272833;
 }
@@ -759,4 +796,5 @@ footer h2 {
   padding: 2%;
   color: white;
   text-align: center;
+  margin-bottom: 0;
 }

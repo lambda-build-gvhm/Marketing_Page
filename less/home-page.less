@@ -6,7 +6,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    transition: background-image 1.5s ease-in-out;
+    transition: background-image 0.75s ease-in-out;
 
     // &:hover {
     //     background-image: url("../img/Heatmap-sat50.jpg");
@@ -58,13 +58,18 @@
 }
 
 .div2 {
-    height: 100vh;
-    background: white;
+    height: auto;
+    background: #111111;
     background-image: url("../img/guns.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 20%;
+
+    @media (max-width: 665px) {
+        padding-top: 40%;
+    }
  
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +150,7 @@
 
 .div3 {
     height: 100vh;
-    background: white;
+    background: #111111;
     // background-image: url("../img/heatmap-overlay.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -164,15 +169,19 @@
 
     @media (max-width: 1056px) {
         flex-direction: column; 
-        height: auto;  
+        height: auto;
+        // border-top: 3px solid white;
+
     }
 
     .iframe {
         height: 100%;
         width: 70%;
+        // display: flex;
         img {
-            height: 100%;
+            // height: 100%;
             width: 100%;
+            margin-top: 12.5%;
             // object-fit: cover;
         }
 
@@ -232,7 +241,7 @@
 
 .div4 {
     height: 100vh;
-    background: white;
+    background: #111111;
     // background-image: url("../img/US-Census-Tract-Latino-Heat-Map.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -257,8 +266,9 @@
         }
 
         img {
-            height: 100%;
+            // height: 100%;
             width: 100%;
+            margin-top: 12.5%;
         }
     }
 
@@ -311,14 +321,20 @@
 }
 
 .div5 {
-    height: 100vh;
+    height: auto;
     background: #040404;
-    padding-top: 6%;
+    padding-top: 4%;
     position: relative;
     text-align: center;
+    border-top: 7px solid #272833;
 
 
     .div5-content {
+
+        @media (max-width: 665px) {
+            padding: 2% 3%;
+        }
+
         h2 {
             font-family: "Roboto", Helvetica, sans-serif;
             font-size: 34px;
@@ -341,14 +357,14 @@
             }
         }
 
-        &:after {
-            background: #e44c65;
-            content: '';
-            display: inline-block;
-            height: 0.2em;
-            max-width: 20em;
-            width: 75%;
-        }
+        // &:after {
+        //     background: #e44c65;
+        //     content: '';
+        //     display: inline-block;
+        //     height: 0.2em;
+        //     max-width: 20em;
+        //     width: 75%;
+        // }
     }
 }
 
@@ -391,3 +407,4 @@
 .unhide {
 	display: block;
 }
+
