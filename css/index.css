@@ -396,6 +396,7 @@ nav .sign-in-btn:hover {
   font-size: 34px;
   color: white;
   padding: 1%;
+  line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div2 .info-bar .info-content .info-bar-left h2 {
@@ -416,6 +417,7 @@ nav .sign-in-btn:hover {
   color: white;
   font-size: 20px;
   padding: 1%;
+  line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div2 .info-bar .info-content .info-bar-right p {
@@ -430,6 +432,7 @@ nav .sign-in-btn:hover {
 .div3 {
   height: 100vh;
   background: #111111;
+  background-image: url("../img/national-map.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -447,6 +450,7 @@ nav .sign-in-btn:hover {
   .div3 {
     flex-direction: column;
     height: auto;
+    background-image: none;
   }
 }
 .div3 .iframe {
@@ -456,6 +460,12 @@ nav .sign-in-btn:hover {
 .div3 .iframe img {
   width: 100%;
   margin-top: 12.5%;
+  display: none;
+}
+@media (max-width: 1056px) {
+  .div3 .iframe img {
+    display: block;
+  }
 }
 @media (max-width: 1056px) {
   .div3 .iframe {
@@ -468,7 +478,7 @@ nav .sign-in-btn:hover {
   width: 30%;
   background-color: black;
   border-left: 7px solid #5480f1;
-  opacity: 0.9;
+  opacity: 0.8;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -512,6 +522,7 @@ nav .sign-in-btn:hover {
 .div4 {
   height: 100vh;
   background: #111111;
+  background-image: url("../img/red-graph.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -523,6 +534,7 @@ nav .sign-in-btn:hover {
   .div4 {
     flex-direction: column-reverse;
     height: auto;
+    background-image: none;
   }
 }
 .div4 .iframe {
@@ -536,13 +548,19 @@ nav .sign-in-btn:hover {
 .div4 .iframe img {
   width: 100%;
   margin-top: 12.5%;
+  display: none;
+}
+@media (max-width: 1056px) {
+  .div4 .iframe img {
+    display: block;
+  }
 }
 .div4 .vertical-info-bar {
   height: 100%;
   width: 30%;
   background-color: black;
   border-right: 7px solid #39c088;
-  opacity: 0.9;
+  opacity: 0.8;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -644,6 +662,51 @@ nav .sign-in-btn:hover {
 }
 .unhide {
   display: block;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.red-font {
+  color: #e44c65;
+  font-weight: bold;
+  font-size: 40px;
 }
 .about-us {
   background-color: #040404;
@@ -772,6 +835,7 @@ nav .sign-in-btn:hover {
   height: auto;
   width: 30%;
   margin: 1%;
+  cursor: pointer;
 }
 @media (max-width: 665px) {
   .modals .card {
@@ -787,6 +851,68 @@ nav .sign-in-btn:hover {
   font-size: 16px;
   color: white;
   padding: 3%;
+}
+.modals .card #overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: red;
+}
+.modals .card .card1:hover .overlay {
+  opacity: 1;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  width: 80% !important;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.modal-content img {
+  width: 100%;
+  height: 90%;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 footer {
   background-color: #272833;

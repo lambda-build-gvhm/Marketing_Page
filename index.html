@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- <script src="js/index.js" async></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -70,12 +71,12 @@
                     <div class="info-content">   
                         <div class="info-bar-left">
                             <h2>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                More than <span class="red-font">30,000</span> gun deaths occur in the United States every year.
                             </h2>
                         </div>
                         <div class="info-bar-right">
                             <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Gun violence is a complex problem that has changes over time and across geography. We must understand the data in detail before we can formulate effective solutions. With this app we've made the tools for doing that deep analysis available to anyone.
                             </p>
                         </div>
                     </div>
@@ -94,7 +95,7 @@
                         scrolling="no" seamless="seamless"         
                         frameBorder="0"> 
                         </iframe> -->
-                        <img src="img/national-map.jpg">
+                        <img src="img/national-map.jpg" class="hide">
                     </div>
                     <div class="vertical-info-bar hideme">
                         <div>
@@ -134,7 +135,7 @@
                     scrolling="no" seamless="seamless"         
                     frameBorder="0"> 
                     </iframe> -->
-                    <img src="img/red-graph.png">
+                    <img src="img/red-graph.png" class = "hide">
                 </div>
             </div>
 
@@ -148,7 +149,8 @@
                     </p>
                 </div>
                 <div class="modals">
-                    <div class="card">
+                    <div class="card card1 trigger">
+                        <div id="overlay"></div>
                         <img src="img/tab.jpg">
                         <p>
                             Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat.                             Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat
@@ -156,6 +158,19 @@
 
                         </p>
                     </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close-button"><i class="fas fa-window-close"></i></span>
+                            <h2>
+                                Accumsan sed tempus adipiscing blandit
+                            </h2>
+                            <p>
+                                Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat
+                            </p>
+                            <img src="img/red-graph.png">
+                        </div>
+                    </div>
+                    <!-- <button class="trigger">Click here to trigger the modal!</button> -->
                     <div class="card">
                         <img src="img/tab.jpg">
                         <p>
