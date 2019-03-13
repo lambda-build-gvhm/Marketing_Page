@@ -342,7 +342,7 @@ nav .sign-in-btn:hover {
 }
 .div2 {
   height: 100vh;
-  background: white;
+  background: #111111;
   background-image: url("../img/guns.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -423,7 +423,7 @@ nav .sign-in-btn:hover {
 }
 .div3 {
   height: 100vh;
-  background: white;
+  background: #111111;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -448,7 +448,6 @@ nav .sign-in-btn:hover {
   width: 70%;
 }
 .div3 .iframe img {
-  height: 100%;
   width: 100%;
 }
 @media (max-width: 1056px) {
@@ -505,7 +504,7 @@ nav .sign-in-btn:hover {
 }
 .div4 {
   height: 100vh;
-  background: white;
+  background: #111111;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -578,11 +577,17 @@ nav .sign-in-btn:hover {
   }
 }
 .div5 {
-  height: 800px;
+  height: auto;
   background: #040404;
   padding-top: 4%;
   position: relative;
   text-align: center;
+  border-top: 7px solid #fff;
+}
+@media (max-width: 665px) {
+  .div5 .div5-content {
+    padding: 2% 3%;
+  }
 }
 .div5 .div5-content h2 {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -605,14 +610,6 @@ nav .sign-in-btn:hover {
   .div5 .div5-content p {
     font-size: 18px;
   }
-}
-.div5 .div5-content:after {
-  background: #e44c65;
-  content: '';
-  display: inline-block;
-  height: 0.2em;
-  max-width: 20em;
-  width: 75%;
 }
 .down-arrow {
   width: 100px;
@@ -754,13 +751,29 @@ nav .sign-in-btn:hover {
 .modals {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 2% 4%;
+  justify-content: space-between;
+  padding: 2%;
+  height: auto;
+}
+@media (max-width: 665px) {
+  .modals {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .modals .card {
-  height: 300px;
-  width: 27%;
+  height: auto;
+  width: 30%;
   margin: 1%;
+}
+@media (max-width: 665px) {
+  .modals .card {
+    width: 90%;
+  }
+}
+.modals .card img {
+  border-bottom: 4px solid #5480f1;
+  width: 100%;
 }
 .modals .card p {
   font-family: "Roboto", Helvetica, sans-serif;
@@ -776,4 +789,5 @@ footer h2 {
   padding: 2%;
   color: white;
   text-align: center;
+  margin-bottom: 0;
 }
