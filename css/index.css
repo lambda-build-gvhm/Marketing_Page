@@ -824,10 +824,9 @@ nav .sign-in-btn:hover {
   opacity: 0;
   transition: 0.3s ease;
   background-color: black;
-  z-index: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .modals .card #overlay p {
   font-size: 40px;
@@ -845,6 +844,7 @@ nav .sign-in-btn:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  z-index: 2;
   visibility: hidden;
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;

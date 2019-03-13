@@ -47,11 +47,11 @@ mobileMenuButton.addEventListener('click', function(){
 // }, 800);
 // })
 
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
+var modal = document.querySelector(".modal1");
+var trigger = document.querySelector(".card1");
 var closeButton = document.querySelector(".close-button");
 
-function toggleModal() {
+function toggleModal1() {
     modal.classList.toggle("show-modal");
 }
 
@@ -61,8 +61,8 @@ function toggleModal() {
 //     }
 // }
 
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
+trigger.addEventListener("click", toggleModal1);
+closeButton.addEventListener("click", toggleModal1);
 // window.addEventListener("click", windowOnClick);
 
 
@@ -102,3 +102,37 @@ closeButton.addEventListener("click", toggleModal);
 // trigger.addEventListener("click", toggleModal2);
 // closeButton.addEventListener("click", toggleModal2);
 // window.addEventListener("click", windowOnClick);
+
+var modal2 = document.querySelector(".modal2");
+var trigger2 = document.querySelector(".card2");
+var closeButton2 = document.querySelector(".close-button2");
+
+function toggleModal2() {
+    modal2.classList.toggle("show-modal");
+}
+
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
+
+trigger2.addEventListener("click", toggleModal2);
+closeButton2.addEventListener("click", toggleModal2);
+
+var modal3 = document.querySelector(".modal3");
+var trigger3 = document.querySelector(".card3");
+var closeButton3 = document.querySelector(".close-button3");
+
+function toggleModal3() {
+    modal3.classList.toggle("show-modal");
+}
+
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
+
+trigger3.addEventListener("click", toggleModal3);
+closeButton3.addEventListener("click", toggleModal3);
