@@ -15,13 +15,15 @@
         width: 30%;
         margin: 1%;
         // background-color: red;
+        cursor: pointer;
+        position: relative;
 
         @media (max-width: 665px) {
             width: 90%;
         }
 
         img {
-            border-bottom: 4px solid #5480f1;
+            border-bottom: 4px solid #39c088;
             width: 100%;
         }
         p {
@@ -30,5 +32,92 @@
             color: white;
             padding: 3%;
         }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: black;
+            // z-index: 1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            p {   
+                font-size: 40px;
+                color: white;
+                vertical-align: center;
+                margin-bottom: 10%;
+            }
+          }
+
+          #overlay:hover {
+            opacity: 0.5;
+          }
     }
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    width: 80% !important;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    background-color: #111111;
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+
+    img {
+        width: 100%;
+        height: 90%;
+    }
+
+    h2 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
