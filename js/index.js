@@ -1,4 +1,4 @@
-//Heat pulse event
+// //Heat pulse event
 
 let thing = document.querySelector('#div1');
 window.addEventListener( "load", function(event) {
@@ -26,3 +26,23 @@ mobileMenuButton.addEventListener('click', function(){
   mobileDropNav.classList.toggle('unhide');
 });
 
+//Heat pulse practice
+
+// let thing = document.querySelector('#div1');
+// window.addEventListener( "load", function(event) {
+//     let num = 0;
+// const interval = setInterval(()=> {
+//     if(num===3) {
+//         clearInterval(interval);
+//         thing.style.backgroundImage = "url('img/purple-map-normal.jpg')";
+//     } else if (num % 2 ===0){
+//         ++num;
+//         console.log(num);
+//         thing.style.backgroundImage = "url('img/purple-map-100.jpg')";
+//     } else {
+//         console.log(num);
+//         ++num;
+//         thing.style.backgroundImage = "url('img/purple-map-0.jpg')";
+//     }       
+// }, 800);
+// })

@@ -341,13 +341,14 @@ nav .sign-in-btn:hover {
   }
 }
 .div2 {
-  height: 100vh;
+  height: auto;
   background: #111111;
   background-image: url("../img/guns.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding-top: 20%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -356,6 +357,11 @@ nav .sign-in-btn:hover {
   box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 665px) {
+  .div2 {
+    padding-top: 40%;
+  }
 }
 .div2 .info-bar {
   height: auto;

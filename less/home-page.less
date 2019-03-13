@@ -58,13 +58,18 @@
 }
 
 .div2 {
-    height: 100vh;
+    height: auto;
     background: #111111;
     background-image: url("../img/guns.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 20%;
+
+    @media (max-width: 665px) {
+        padding-top: 40%;
+    }
  
     display: flex;
     flex-wrap: wrap;
