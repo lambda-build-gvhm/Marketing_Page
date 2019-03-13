@@ -826,12 +826,13 @@ nav .sign-in-btn:hover {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .modals .card #overlay p {
   font-size: 40px;
   color: white;
   vertical-align: center;
+  margin-bottom: 10%;
 }
 .modals .card #overlay:hover {
   opacity: 0.5;
