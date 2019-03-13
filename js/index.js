@@ -55,12 +55,50 @@ function toggleModal() {
     modal.classList.toggle("show-modal");
 }
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick)
+// window.addEventListener("click", windowOnClick);
+
+
+
+// var modal = document.querySelector(".modal1");
+// var trigger = document.querySelector(".card1");
+// var closeButton = document.querySelector(".close-button");
+
+// function toggleModal1() {
+//     modal.classList.toggle("show-modal");
+// }
+
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal1();
+//     }
+// }
+
+// trigger.addEventListener("click", toggleModal1);
+// closeButton.addEventListener("click", toggleModal1);
+// window.addEventListener("click", windowOnClick);
+
+// var modal = document.querySelector(".modal2");
+// var trigger = document.querySelector(".card2");
+// var closeButton = document.querySelector(".close-button");
+
+// function toggleModal2() {
+//     modal.classList.toggle("show-modal");
+// }
+
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal2();
+//     }
+// }
+
+// trigger.addEventListener("click", toggleModal2);
+// closeButton.addEventListener("click", toggleModal2);
+// window.addEventListener("click", windowOnClick);
