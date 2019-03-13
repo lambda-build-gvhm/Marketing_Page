@@ -578,9 +578,9 @@ nav .sign-in-btn:hover {
   }
 }
 .div5 {
-  height: 100vh;
+  height: 800px;
   background: #040404;
-  padding-top: 6%;
+  padding-top: 4%;
   position: relative;
   text-align: center;
 }
@@ -750,6 +750,23 @@ nav .sign-in-btn:hover {
   font-size: 2em;
   color: white;
   padding: 0 10px;
+}
+.modals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 4%;
+}
+.modals .card {
+  height: 300px;
+  width: 27%;
+  margin: 1%;
+}
+.modals .card p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  padding: 3%;
 }
 footer {
   background-color: #272833;
