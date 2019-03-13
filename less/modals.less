@@ -1,0 +1,34 @@
+.modals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    height: auto;
+
+    @media (max-width: 665px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        height: auto;
+        width: 30%;
+        margin: 1%;
+        // background-color: red;
+
+        @media (max-width: 665px) {
+            width: 90%;
+        }
+
+        img {
+            border-bottom: 4px solid #5480f1;
+            width: 100%;
+        }
+        p {
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-size: 16px;
+            color: white;
+            padding: 3%;
+        }
+    }
+}
