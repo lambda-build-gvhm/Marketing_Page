@@ -449,6 +449,7 @@ nav .sign-in-btn:hover {
 }
 .div3 .iframe img {
   width: 100%;
+  margin-top: 12.5%;
 }
 @media (max-width: 1056px) {
   .div3 .iframe {
@@ -527,8 +528,8 @@ nav .sign-in-btn:hover {
   }
 }
 .div4 .iframe img {
-  height: 100%;
   width: 100%;
+  margin-top: 12.5%;
 }
 .div4 .vertical-info-bar {
   height: 100%;
@@ -582,7 +583,7 @@ nav .sign-in-btn:hover {
   padding-top: 4%;
   position: relative;
   text-align: center;
-  border-top: 7px solid #fff;
+  border-top: 7px solid #272833;
 }
 @media (max-width: 665px) {
   .div5 .div5-content {
