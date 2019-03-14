@@ -872,10 +872,12 @@ nav .sign-in-btn:hover {
 }
 .modal-content h2 {
   color: white;
+  font-size: 2rem;
 }
 .modal-content p {
   color: white;
   margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 .close-button {
   float: right;
