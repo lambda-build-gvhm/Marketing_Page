@@ -360,7 +360,8 @@ nav .sign-in-btn:hover {
 }
 @media (max-width: 665px) {
   .div2 {
-    padding-top: 40%;
+    padding-top: 80%;
+    background-attachment: scroll;
   }
 }
 .div2 .info-bar {

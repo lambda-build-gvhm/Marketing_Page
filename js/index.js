@@ -145,7 +145,9 @@ class ModalLink {
     this.modal = document.querySelector(`.modal[data-tab='${this.element.dataset.tab}']`);
     // this.modal = new ModalLink(this.itemElement);
     this.closeButton = document.querySelector(`.close-button[data-tab='${this.element.dataset.tab}']`);
-
+    this.closeButton.addEventListener('click', ()=>  {
+        this.modal.classList.remove('show-modal');
+    });
     this.element.addEventListener('click', (event) => {
         this.select();
     });
@@ -158,9 +160,6 @@ class ModalLink {
             modal.classList.remove('show-modal');
         })
         this.modal.classList.add('show-modal');
-        this.closeButton.addEventListener('click', ()=>  {
-            this.modal.classList.remove('show-modal');
-        });
     }
 }
 
@@ -169,3 +168,20 @@ modal_links = document.querySelectorAll('.trigger')
 modal_links.forEach( e => {
     return new ModalLink(e);
 });
+
+
+//Slide in on scroll
+
+// ScrollReveal().reveal('.info-bar', { delay: 50 });
+// ScrollReveal().reveal('.info-bar', { easing: 'cubic-bezier(0.5, 0, 0, 1)' });
+// ScrollReveal().reveal('.info-bar', { origin: 'right' });
+
+window.div = ScrollReveal();
+div.reveal('.info-bar', { origin: 'bottom', delay:100 });
+div.reveal('.vertical-info-bar-right', { origin: 'right', delay:75, distance : '1000px' });
+div.reveal('.vertical-info-bar-left', { origin: 'left', delay:75, distance : '500px' });
+
+div.reveal('.div5-content', { origin: 'bottom' });
+div.reveal('.modals', { origin: 'bottom' });
+
+// { easing: 'cubic-bezier(0.5, 0, 0, 1)' }
