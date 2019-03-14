@@ -4,17 +4,17 @@ let thing = document.querySelector('#div1');
 window.addEventListener( "load", function(event) {
     let num = 0;
 const interval = setInterval(()=> {
-    if(num===2) {
+    if(num===50) {
         clearInterval(interval);
-        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     } else if (num % 2 ===0){
         ++num;
         console.log(num);
-        thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-saturated.jpg')";
     } else {
         console.log(num);
         ++num;
-        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     }       
 }, 800);
 })
