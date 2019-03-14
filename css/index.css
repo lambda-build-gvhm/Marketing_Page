@@ -292,6 +292,7 @@ nav .sign-in-btn:hover {
 }
 .div1 {
   height: 100vh;
+  animation: 5s pulse;
   background: black;
   background-image: url("../img/circle-heat-map-3-overlay.jpg");
   background-repeat: no-repeat;

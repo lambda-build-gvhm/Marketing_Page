@@ -16,7 +16,7 @@ const interval = setInterval(()=> {
         ++num;
         thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     }       
-}, 800);
+}, 1500);
 })
 
 //Mobile Dropdown
