@@ -181,7 +181,7 @@ div.reveal('.info-bar', { origin: 'bottom', delay:100 });
 div.reveal('.vertical-info-bar-right', { origin: 'right', delay:75, distance : '1000px' });
 div.reveal('.vertical-info-bar-left', { origin: 'left', delay:75, distance : '500px' });
 
-div.reveal('.div5-content', { origin: 'bottom' });
-div.reveal('.modals', { origin: 'bottom' });
+// div.reveal('.div5-content', { origin: 'bottom', delay:100 });
+// div.reveal('.modals', {  origin: 'bottom', delay:100 });
 
 // { easing: 'cubic-bezier(0.5, 0, 0, 1)' }

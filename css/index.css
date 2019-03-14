@@ -175,6 +175,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 10px;
 }
 h1,
 h2,
@@ -328,7 +329,7 @@ nav .sign-in-btn:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 28px;
-  padding: 20px;
+  padding: 10px 20px;
   line-height: 1.25;
   text-align: center;
   margin-bottom: 3%;
@@ -337,7 +338,6 @@ nav .sign-in-btn:hover {
 @media (max-width: 745px) {
   .div1 .div1-wrapper p {
     font-size: 18px;
-    padding: 1% 2%;
   }
 }
 .div2 {
@@ -810,7 +810,7 @@ nav .sign-in-btn:hover {
 }
 .modals .card p {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
   padding: 3%;
 }
@@ -830,7 +830,7 @@ nav .sign-in-btn:hover {
   align-items: center;
 }
 .modals .card #overlay p {
-  font-size: 40px;
+  font-size: 4rem;
   color: white;
   vertical-align: center;
   margin-bottom: 10%;
@@ -874,6 +874,7 @@ nav .sign-in-btn:hover {
 }
 .modal-content p {
   color: white;
+  margin-bottom: 10px;
 }
 .close-button {
   float: right;
