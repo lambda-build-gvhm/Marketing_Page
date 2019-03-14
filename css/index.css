@@ -275,6 +275,11 @@ nav .sign-in-btn:hover {
     display: none;
   }
 }
+@media (min-width: 665px) {
+  .drop-menu {
+    display: none;
+  }
+}
 .drop-nav a {
   padding: 20px;
   margin-bottom: 0;
@@ -665,6 +670,11 @@ nav .sign-in-btn:hover {
 .unhide {
   display: block;
 }
+@media (min-width: 665px) {
+  .unhide {
+    display: none;
+  }
+}
 .red-font {
   color: #e44c65;
   font-weight: bold;
@@ -800,6 +810,11 @@ nav .sign-in-btn:hover {
   cursor: pointer;
   position: relative;
 }
+@media (max-width: 1160px) {
+  .modals .card {
+    width: 48%;
+  }
+}
 @media (max-width: 665px) {
   .modals .card {
     width: 90%;
@@ -829,6 +844,11 @@ nav .sign-in-btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 665px) {
+  .modals .card #overlay {
+    display: none;
+  }
 }
 .modals .card #overlay p {
   font-size: 4rem;
@@ -866,9 +886,13 @@ nav .sign-in-btn:hover {
   width: 24rem;
   border-radius: 0.5rem;
 }
+@media (max-width: 1024px) {
+  .modal-content {
+    height: auto;
+  }
+}
 .modal-content img {
   width: 100%;
-  height: 90%;
 }
 .modal-content h2 {
   color: white;
