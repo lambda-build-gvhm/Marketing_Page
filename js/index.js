@@ -35,7 +35,6 @@ class ModalLink {
 
     this.data = document.querySelector(`.trigger[data-tab='${this.element.dataset.tab}']`);
     this.modal = document.querySelector(`.modal[data-tab='${this.element.dataset.tab}']`);
-    // this.modal = new ModalLink(this.itemElement);
     this.closeButton = document.querySelector(`.close-button[data-tab='${this.element.dataset.tab}']`);
     this.closeButton.addEventListener('click', ()=>  {
         this.modal.classList.remove('show-modal');
@@ -43,6 +42,9 @@ class ModalLink {
     this.element.addEventListener('click', (event) => {
         this.select();
     });
+    
+    /*Tried to remove modal on mobile here but this did not work */
+    
     // var x = window.matchMedia("(max-width: 665px)")
     
     // if (x.matches) { // If media query matches
@@ -50,7 +52,7 @@ class ModalLink {
     //         this.select();
     //     });
     //   }
-    }
+    // }
 
     select() {
         const modals = document.querySelectorAll('.modal');
