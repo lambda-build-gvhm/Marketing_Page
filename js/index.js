@@ -4,19 +4,19 @@ let thing = document.querySelector('#div1');
 window.addEventListener( "load", function(event) {
     let num = 0;
 const interval = setInterval(()=> {
-    if(num===2) {
+    if(num===50) {
         clearInterval(interval);
-        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     } else if (num % 2 ===0){
         ++num;
         console.log(num);
-        thing.style.backgroundImage = "url('img/Heatmap-sat50.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-saturated.jpg')";
     } else {
         console.log(num);
         ++num;
-        thing.style.backgroundImage = "url('img/heatmap1.jpg')";
+        thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     }       
-}, 800);
+}, 1500);
 })
 
 //Mobile Dropdown
@@ -148,9 +148,17 @@ class ModalLink {
     this.closeButton.addEventListener('click', ()=>  {
         this.modal.classList.remove('show-modal');
     });
-    this.element.addEventListener('click', (event) => {
-        this.select();
-    });
+    
+    var x = window.matchMedia("(max-width: 665px)")
+    
+    if (x.matches) { // If media query matches
+        this.element.addEventListener('click', (event) => {
+            this.select();
+        });
+      }
+        // this.element.addEventListener('click', (event) => {
+        //     this.select();
+        // });
     }
 
     select() {
@@ -165,9 +173,9 @@ class ModalLink {
 
 
 modal_links = document.querySelectorAll('.trigger')
-modal_links.forEach( e => {
-    return new ModalLink(e);
-});
+    modal_links.forEach( e => {
+        return new ModalLink(e);
+    });
 
 
 //Slide in on scroll
@@ -181,7 +189,7 @@ div.reveal('.info-bar', { origin: 'bottom', delay:100 });
 div.reveal('.vertical-info-bar-right', { origin: 'right', delay:75, distance : '1000px' });
 div.reveal('.vertical-info-bar-left', { origin: 'left', delay:75, distance : '500px' });
 
-div.reveal('.div5-content', { origin: 'bottom' });
-div.reveal('.modals', { origin: 'bottom' });
+// div.reveal('.div5-content', { origin: 'bottom', delay:100 });
+// div.reveal('.modals', {  origin: 'bottom', delay:100 });
 
 // { easing: 'cubic-bezier(0.5, 0, 0, 1)' }

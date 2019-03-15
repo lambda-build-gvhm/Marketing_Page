@@ -175,6 +175,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 10px;
 }
 h1,
 h2,
@@ -274,6 +275,11 @@ nav .sign-in-btn:hover {
     display: none;
   }
 }
+@media (min-width: 665px) {
+  .drop-menu {
+    display: none;
+  }
+}
 .drop-nav a {
   padding: 20px;
   margin-bottom: 0;
@@ -291,8 +297,9 @@ nav .sign-in-btn:hover {
 }
 .div1 {
   height: 100vh;
+  animation: 5s pulse;
   background: black;
-  background-image: url("../img/heatmap1.jpg");
+  background-image: url("../img/circle-heat-map-3-overlay.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -315,20 +322,20 @@ nav .sign-in-btn:hover {
 .div1 .div1-wrapper h1 {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 60px;
+  font-size: 6rem;
   padding: 10px 10px 0 10px;
   text-align: center;
 }
 @media (max-width: 745px) {
   .div1 .div1-wrapper h1 {
-    font-size: 46px;
+    font-size: 4.6rem;
   }
 }
 .div1 .div1-wrapper p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 28px;
-  padding: 20px;
+  font-size: 2.8rem;
+  padding: 10px 20px;
   line-height: 1.25;
   text-align: center;
   margin-bottom: 3%;
@@ -336,8 +343,7 @@ nav .sign-in-btn:hover {
 }
 @media (max-width: 745px) {
   .div1 .div1-wrapper p {
-    font-size: 18px;
-    padding: 1% 2%;
+    font-size: 1.8rem;
   }
 }
 .div2 {
@@ -394,14 +400,14 @@ nav .sign-in-btn:hover {
 }
 .div2 .info-bar .info-content .info-bar-left h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 3.4rem;
   color: white;
   padding: 1%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div2 .info-bar .info-content .info-bar-left h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 .div2 .info-bar .info-content .info-bar-right {
@@ -416,24 +422,24 @@ nav .sign-in-btn:hover {
 .div2 .info-bar .info-content .info-bar-right p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 1%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div2 .info-bar .info-content .info-bar-right p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 980px) {
   .div2 .info-bar .info-content .info-bar-right p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 .div3 {
   height: 100vh;
   background: #111111;
-  background-image: url("../img/circle-heat-map-3.jpg");
+  background-image: url("../img/circle-heat-map2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -497,27 +503,27 @@ nav .sign-in-btn:hover {
 }
 .div3 .vertical-info-bar h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 3.4rem;
   color: white;
   padding: 2% 2% 8% 2%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div3 .vertical-info-bar h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     padding: 2%;
   }
 }
 .div3 .vertical-info-bar p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 2%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div3 .vertical-info-bar p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 .div4 {
@@ -579,27 +585,27 @@ nav .sign-in-btn:hover {
 }
 .div4 .vertical-info-bar h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 3.4rem;
   color: white;
   padding: 2% 2% 8% 2%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div4 .vertical-info-bar h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     padding: 2%;
   }
 }
 .div4 p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 2%;
   line-height: 1.25;
 }
 @media (max-width: 1160px) {
   .div4 p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 .div5 {
@@ -617,24 +623,24 @@ nav .sign-in-btn:hover {
 }
 .div5 .div5-content h2 {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 3.4rem;
   color: white;
   padding: 1%;
 }
 @media (max-width: 1160px) {
   .div5 .div5-content h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 .div5 .div5-content p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 1% 0 2% 0;
 }
 @media (max-width: 1160px) {
   .div5 .div5-content p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 .down-arrow {
@@ -663,6 +669,11 @@ nav .sign-in-btn:hover {
 }
 .unhide {
   display: block;
+}
+@media (min-width: 665px) {
+  .unhide {
+    display: none;
+  }
 }
 .red-font {
   color: #e44c65;
@@ -779,6 +790,15 @@ nav .sign-in-btn:hover {
   color: white;
   padding: 0 10px;
 }
+.meet-team-pictures .person .icon-wrapper a {
+  color: white;
+}
+.meet-team-pictures .person .icon-wrapper a .icon-wrapper {
+  color: white;
+}
+.fav-links {
+  color: white;
+}
 .modals {
   display: flex;
   flex-wrap: wrap;
@@ -799,9 +819,15 @@ nav .sign-in-btn:hover {
   cursor: pointer;
   position: relative;
 }
+@media (max-width: 1160px) {
+  .modals .card {
+    width: 48%;
+  }
+}
 @media (max-width: 665px) {
   .modals .card {
     width: 90%;
+    cursor: default;
   }
 }
 .modals .card img {
@@ -810,7 +836,7 @@ nav .sign-in-btn:hover {
 }
 .modals .card p {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
   padding: 3%;
 }
@@ -829,8 +855,13 @@ nav .sign-in-btn:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 665px) {
+  .modals .card #overlay {
+    display: none;
+  }
+}
 .modals .card #overlay p {
-  font-size: 40px;
+  font-size: 4rem;
   color: white;
   vertical-align: center;
   margin-bottom: 10%;
@@ -865,15 +896,22 @@ nav .sign-in-btn:hover {
   width: 24rem;
   border-radius: 0.5rem;
 }
+@media (max-width: 1024px) {
+  .modal-content {
+    height: auto;
+  }
+}
 .modal-content img {
   width: 100%;
-  height: 90%;
 }
 .modal-content h2 {
   color: white;
+  font-size: 2rem;
 }
 .modal-content p {
   color: white;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 .close-button {
   float: right;
