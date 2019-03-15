@@ -790,6 +790,15 @@ nav .sign-in-btn:hover {
   color: white;
   padding: 0 10px;
 }
+.meet-team-pictures .person .icon-wrapper a {
+  color: white;
+}
+.meet-team-pictures .person .icon-wrapper a .icon-wrapper {
+  color: white;
+}
+.fav-links {
+  color: white;
+}
 .modals {
   display: flex;
   flex-wrap: wrap;
