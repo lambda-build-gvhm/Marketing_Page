@@ -9,10 +9,10 @@ const interval = setInterval(()=> {
         thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     } else if (num % 2 ===0){
         ++num;
-        console.log(num);
+        // console.log(num);
         thing.style.backgroundImage = "url('img/circle-heat-map-3-saturated.jpg')";
     } else {
-        console.log(num);
+        // console.log(num);
         ++num;
         thing.style.backgroundImage = "url('img/circle-heat-map-3-overlay.jpg')";
     }       
