@@ -148,9 +148,17 @@ class ModalLink {
     this.closeButton.addEventListener('click', ()=>  {
         this.modal.classList.remove('show-modal');
     });
-    this.element.addEventListener('click', (event) => {
-        this.select();
-    });
+    
+    var x = window.matchMedia("(max-width: 665px)")
+    
+    if (x.matches) { // If media query matches
+        this.element.addEventListener('click', (event) => {
+            this.select();
+        });
+      }
+        // this.element.addEventListener('click', (event) => {
+        //     this.select();
+        // });
     }
 
     select() {
@@ -165,9 +173,9 @@ class ModalLink {
 
 
 modal_links = document.querySelectorAll('.trigger')
-modal_links.forEach( e => {
-    return new ModalLink(e);
-});
+    modal_links.forEach( e => {
+        return new ModalLink(e);
+    });
 
 
 //Slide in on scroll

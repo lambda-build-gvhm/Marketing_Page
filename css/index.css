@@ -827,6 +827,7 @@ nav .sign-in-btn:hover {
 @media (max-width: 665px) {
   .modals .card {
     width: 90%;
+    cursor: default;
   }
 }
 .modals .card img {
