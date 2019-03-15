@@ -7,35 +7,25 @@
 
     <title>Gun Violence Heat Map</title>
     
-    <!-- <link rel="icon" href="img/gun-icon.png"> -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- <script src="js/index.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKRbseSg2P7kIFi+5iIZ/Kjkm9JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVhWXwSkEw/0lAL/9jWEH/no5rogAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn49swU5FM/9IQC//S0Ix/5uLaeOdjWoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKRbnBqXkb/SEAv/0g/Lv+Fd1r/no1rJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChkW0Rj4Bg8ElBL/9IPy7/bGBI/6CPbI+fjmsyno5rMp2NajKejmsqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKGQbYRnW0T/SUAv/4V4Xv/by6j/oI9suJ+Oa5mgj2ysn45r0pyNZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChkG0Vi3xd/klAL/9TSTb/lYZl/6CPbAR3alFpintdJqCPbMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoZBtLoV3Wf9JQC//SUAv/4J0V/+cjGpWeGtSaqGQbQ2ikW3loZBtG6GPbgKij20Co5BtAqKPbQIAAAAAoZFtHqKRbeKMfV7/f3FV/39xVf+IeVv/opFu/6KRbf+jkm7/o5Ju/6KRbf+jkm7/pJNu/6SSbv+kk279///em/7qwjL+6sH//urB//7qwv/+6sL//+rC///qwv//6sL//+vC///rwv//68L//+vC///sw///7MP//+zD////+fv///8w////////////////////////////9tP+3s2q/t/Oqv7///j////////////////////////////////8////Ff///5X/7sv0////m////5X///+V4dCslaaVcJWmlXCV///plf///5X///+V////lf///5f/8c30////mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAAH/wAAB/8AAAP/AAAD/wAAAD8AAIAfAACAPwAAgAEAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKRbseSg2P7kIFi+5iIZ/Kjkm9JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACVhWXwSkEw/0lAL/9jWEH/no5rogAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAn49swU5FM/9IQC//S0Ix/5uLaeOdjWoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKRbnBqXkb/SEAv/0g/Lv+Fd1r/no1rJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChkW0Rj4Bg8ElBL/9IPy7/bGBI/6CPbI+fjmsyno5rMp2NajKejmsqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKGQbYRnW0T/SUAv/4V4Xv/by6j/oI9suJ+Oa5mgj2ysn45r0pyNZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChkG0Vi3xd/klAL/9TSTb/lYZl/6CPbAR3alFpintdJqCPbMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoZBtLoV3Wf9JQC//SUAv/4J0V/+cjGpWeGtSaqGQbQ2ikW3loZBtG6GPbgKij20Co5BtAqKPbQIAAAAAoZFtHqKRbeKMfV7/f3FV/39xVf+IeVv/opFu/6KRbf+jkm7/o5Ju/6KRbf+jkm7/pJNu/6SSbv+kk279///em/7qwjL+6sH//urB//7qwv/+6sL//+rC///qwv//6sL//+vC///rwv//68L//+vC///sw///7MP//+zD////+fv///8w////////////////////////////9tP+3s2q/t/Oqv7///j////////////////////////////////8////Ff///5X/7sv0////m////5X///+V4dCslaaVcJWmlXCV///plf///5X///+V////lf///5f/8c30////mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAAH/wAAB/8AAAP/AAAD/wAAAD8AAIAfAACAPwAAgAEAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
     </head>
 
     <body>
         <div class="container home">
 
-            <!-- <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Login</a>
-            </nav> -->
-
+            <!-- Banner -->
             <div class="div1" id="div1">  
+                <!--Desktop/tablet Nav Menu-->
                 <nav>
                     <div class="mobile-icon">  
                         <img src="img/menu.png" class="mobile-menu-icon">
@@ -55,13 +45,14 @@
                 </div>
                 <!-- Hidden mobile menu dropdown END-->
 
-                <div class="div1-wrapper">
+                <div class="div1-content-wrapper">
                     <h1>Gun Violence Heatmap</h1>
                     <p>Putting interactive data at your fingertips so you can make a difference</p>
                     <a href="https://gun-violence-heat-map.netlify.com/"><button>Try the App</button></a>
                 </div> 
             </div>
 
+            <!-- Second content section -->
             <div class="div2">
                 <div class="info-bar">
                     <div class="info-content">   
@@ -75,42 +66,30 @@
                                 Gun violence is a complex problem that has changed over time and across geography. We must understand the data in detail before we can formulate effective solutions. With this app we've made the tools for doing that deep analysis available to anyone.
                             </p>
                         </div>
-                    </div>
-                     
-                    <!-- <div class="down-arrow">
-                        <img src="img\white-down-arrow-png-2.png">
-                    </div> -->
-                    
+                    </div>  
                 </div>
             </div>
 
+            <!-- Third content section -->
             <div class="div3">
-                    <div class="iframe">
-                        <!-- <iframe src="https://plot.ly/~krsmith/2.embed"         
-                        height="100%" width="100%"         
-                        scrolling="no" seamless="seamless"         
-                        frameBorder="0"> 
-                        </iframe> -->
-                        <img src="img/circle-heat-map-3.jpg" class="hide">
+                <div class="iframe">
+                    <img src="img/circle-heat-map-3.jpg" class="hide">
+                </div>
+                <div class="vertical-info-bar vertical-info-bar-right hideme">
+                    <div>
+                        <h2>
+                            Gun violence statistics vary widely across states and counties.
+                        </h2>
                     </div>
-                    <div class="vertical-info-bar vertical-info-bar-right hideme">
-                        <div>
-                            <h2>
-                                Gun violence statistics vary widely across states and counties.
-                            </h2>
-                        </div>
-                        <div class="info-bar-bottom">
-                            <p>
-                                With Gun Violence Heatmap you can visually explore the nationwide data and interactively control the map, allowing you to narrow your focus all the way down to the neighborhood level.
-                            </p>
-                        </div>
+                    <div class="info-bar-bottom">
+                        <p>
+                            With Gun Violence Heatmap you can visually explore the nationwide data and interactively control the map, allowing you to narrow your focus all the way down to the neighborhood level.
+                        </p>
                     </div>
-
-                    <!-- <div class="down-arrow">
-                        <img src="img\white-down-arrow-png-2.png">
-                    </div> -->
+                </div>
             </div>
 
+            <!-- Fourth content section -->
             <div class="div4">
                 <div class="vertical-info-bar vertical-info-bar-left hideme">
                     <div>
@@ -124,17 +103,12 @@
                         </p>
                     </div>
                 </div>
-
                 <div class="iframe">
-                    <!-- <iframe src="https://plot.ly/~krsmith/2.embed"         
-                    height="100%" width="100%"         
-                    scrolling="no" seamless="seamless"         
-                    frameBorder="0"> 
-                    </iframe> -->
                     <img src="img/red-graph.png" class = "hide">
                 </div>
             </div>
 
+            <!-- Fifth content section w/ Modals -->
             <div class="div5">
                 <div class="div5-content">   
                     <h2>
@@ -145,6 +119,7 @@
                     </p>
                 </div>
                 <div class="modals">
+                    <!-- Modal 1 -->
                     <div class="card card1 trigger" data-tab="1">
                         <div id="overlay"><p>Expand</p></div>
                         <img src="img/national-map-2.jpg">
@@ -164,7 +139,8 @@
                             <img src="img/national-map-2.jpg">
                         </div>
                     </div>
-                    <!-- <button class="trigger">Click here to trigger the modal!</button> -->
+
+                    <!-- Modal 2 -->
                     <div class="card card2 trigger " data-tab="2">
                             <div id="overlay"><p>Expand</p></div>
                         <img src="img/county-map-2.jpg">
@@ -184,6 +160,8 @@
                             <img src="img/county-map-2.jpg">
                         </div>
                     </div>
+
+                    <!-- Modal 3 -->
                     <div class="card card3 trigger" data-tab="3">
                         <div id="overlay"><p>Expand</p></div>
                         <img src="img/circle-heat-map.jpg">
@@ -203,7 +181,8 @@
                             <img src="img/circle-heat-map.jpg">
                         </div>
                     </div>
-                    
+
+                    <!-- Modal 4 -->                  
                     <div class="card card3 trigger" data-tab="4">
                         <div id="overlay"><p>Expand</p></div>
                         <img src="img/time-series-2.jpg">
@@ -223,6 +202,8 @@
                             <img src="img/time-series-2.jpg">
                         </div>
                     </div>
+
+                    <!-- Modal 5 -->
                     <div class="card card3 trigger" data-tab="5">
                             <div id="overlay"><p>Expand</p></div>
                             <img src="img/newplot1.png">
@@ -230,54 +211,49 @@
                                 Watch violence trends develop over time with the trends tool.
                             </p>
                         </div>
-                        <div class="modal modal3" data-tab="5">
-                            <div class="modal-content">
-                                <span class="close-button close-button3" data-tab="5"><i class="fas fa-window-close"></i></span>
-                                <h2>
-                                    Trends Tool
-                                </h2>
-                                <p>
-                                    These animated charts show statistical trends developing across time.
-                                </p>
-                                <img src="img/newplot1.png">
-                            </div>
-                        </div>
-                        <div class="card card3 trigger" data-tab="6">
-                                <div id="overlay"><p>Expand</p></div>
-                                <img src="img/comparison-cropped-2.png">
-                                <p>
-                                    Dig into specific gun violence metrics with the charts tool.
-                                </p>
-                            </div>
-                            <div class="modal modal3" data-tab="6">
-                                <div class="modal-content">
-                                    <span class="close-button close-button3" data-tab="6"><i class="fas fa-window-close"></i></span>
-                                    <h2>
-                                        Charts Tool
-                                    </h2>
-                                    <p>
-                                        Visually explore gun violence data from a variety of stastical angles.
-                                    </p>
-                                    <img src="img/comparison-cropped-2.png">
-                                </div>
-                            </div>
+                    <div class="modal modal3" data-tab="5">
+                        <div class="modal-content">
+                            <span class="close-button close-button3" data-tab="5"><i class="fas fa-window-close"></i></span>
+                            <h2>
+                                Trends Tool
+                            </h2>
+                            <p>
+                                These animated charts show statistical trends developing across time.
+                            </p>
+                            <img src="img/newplot1.png">
                         </div>
                     </div>
-                </div>
 
-                <!-- <iframe src="https://plot.ly/~krsmith/2.embed"         
-                height="86%" width="98%"         
-                scrolling="no" seamless="seamless"         
-                frameBorder="0"> 
-                </iframe> -->
+                    <!-- Modal 6 -->
+                    <div class="card card3 trigger" data-tab="6">
+                        <div id="overlay"><p>Expand</p></div>
+                        <img src="img/comparison-cropped-2.png">
+                        <p>
+                            Dig into specific gun violence metrics with the charts tool.
+                        </p>
+                    </div>
+                    <div class="modal modal3" data-tab="6">
+                        <div class="modal-content">
+                            <span class="close-button close-button3" data-tab="6"><i class="fas fa-window-close"></i></span>
+                            <h2>
+                                Charts Tool
+                            </h2>
+                            <p>
+                                Visually explore gun violence data from a variety of stastical angles.
+                            </p>
+                            <img src="img/comparison-cropped-2.png">
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <footer>
-                <h2> Copyright 2019</h2>
-            </footer>
         </div>
+    <!-- </div> -->
+        <footer>
+            <h2> Gun Violence Heatmap | Copyright 2019</h2>
+        </footer>
+        <!-- </div> -->
         <script src="js/index.js" async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
     </body>
 </html>

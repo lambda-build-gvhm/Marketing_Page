@@ -1,11 +1,3 @@
-// @keyframes pulse {
-//     0% { background-image: none; }
-//     33% { background-image: url("../img/circle-heat-map-3-saturated.jpg"); }
-//     100% { background-image: none; }
-// }
-
-
-
 .div1 {
     height: 100vh;
     animation: 5s pulse;
@@ -17,10 +9,6 @@
     background-size: cover;
     width: 100%;
     transition: background-image 0.75s ease-in-out;
-
-    // &:hover {
-    //     background-image: url("../img/Heatmap-sat50.jpg");
-    // }
     
 
     position: relative;
@@ -29,19 +17,8 @@
     box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
     -webkit-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 1px 10px 5px 0px rgba(0,0,0,0.35);
-    
-    // .div1-content {
-    //     z-index: 2;
-    // }
-    // .background-div {
-    //     height: inherit;
-    //     width: inherit;
-    //     position: absolute;
-    //     background-image: url(http://placekitten.com/600/400);
-    //     z-index: 1;
-    // }
 
-    .div1-wrapper {
+    .div1-content-wrapper {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -176,7 +153,6 @@
 .div3 {
     height: 100vh;
     background: #111111;
-    // background-image: url("../img/national-map.jpg");
     background-image: url("../img/circle-heat-map2.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -184,7 +160,6 @@
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column-reverse;
     justify-content: space-between;
     position: relative;
     z-index: 10;
@@ -197,19 +172,14 @@
         flex-direction: column; 
         height: auto;
         background-image: none;
-        // border-top: 3px solid white;
-
     }
 
     .iframe {
         height: 100%;
         width: 70%;
-        // display: flex;
         img {
-            // height: 100%;
             width: 100%;
             margin-top: 1%;
-            // object-fit: cover;
             display: none;
 
             @media (max-width: 1056px) {
@@ -281,7 +251,6 @@
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: flex-start;
 
 
     @media (max-width: 1056px) {
@@ -292,7 +261,6 @@
     }
 
     .iframe {
-        // height: 100%;
         width: 70%;
 
         @media (max-width: 1056px) {
@@ -300,7 +268,6 @@
         }
 
         img {
-            // height: 100%;
             width: 100%;
             margin-top: 1%;
             display: none;
@@ -395,53 +362,8 @@
                 font-size: 1.8rem;
             }
         }
-
-        // &:after {
-        //     background: #e44c65;
-        //     content: '';
-        //     display: inline-block;
-        //     height: 0.2em;
-        //     max-width: 20em;
-        //     width: 75%;
-        // }
     }
 }
-
-.down-arrow {
-    width: 100px;
-    // position: absolute;
-    // bottom: 0;
-    text-align: center;
-}
-
-.down-arrow2 {
-    width: 100px;
-    // position: absolute;
-    // bottom: 0;
-    text-align: center;
-}
-
-.arrow-wrapper {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.arrow2-wrapper {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-
-// .hide {
-//     display: none;
-// }
 
 .unhide {
     display: block;
@@ -450,48 +372,6 @@
         display: none;
     }
 }
-
-// .modal {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     opacity: 0;
-//     visibility: hidden;
-//     transform: scale(1.1);
-//     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-// }
-// .modal-content {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     background-color: white;
-//     padding: 1rem 1.5rem;
-//     width: 24rem;
-//     border-radius: 0.5rem;
-// }
-
-// .close-button {
-//     float: right;
-//     width: 1.5rem;
-//     line-height: 1.5rem;
-//     text-align: center;
-//     cursor: pointer;
-//     border-radius: 0.25rem;
-//     background-color: lightgray;
-// }
-// .close-button:hover {
-//     background-color: darkgray;
-// }
-// .show-modal {
-//     opacity: 1;
-//     visibility: visible;
-//     transform: scale(1.0);
-//     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-// }
 
 .red-font {
     color: #e44c65;

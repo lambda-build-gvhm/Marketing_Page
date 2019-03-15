@@ -192,8 +192,10 @@ strong {
 }
 .container {
   margin: 0 auto;
+  max-width: 100%;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 nav {
   display: flex;
@@ -311,7 +313,7 @@ nav .sign-in-btn:hover {
   -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.35);
 }
-.div1 .div1-wrapper {
+.div1 .div1-content-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -319,7 +321,7 @@ nav .sign-in-btn:hover {
   flex-direction: column;
   height: 80%;
 }
-.div1 .div1-wrapper h1 {
+.div1 .div1-content-wrapper h1 {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 6rem;
@@ -327,11 +329,11 @@ nav .sign-in-btn:hover {
   text-align: center;
 }
 @media (max-width: 745px) {
-  .div1 .div1-wrapper h1 {
+  .div1 .div1-content-wrapper h1 {
     font-size: 4.6rem;
   }
 }
-.div1 .div1-wrapper p {
+.div1 .div1-content-wrapper p {
   font-family: "Roboto", Helvetica, sans-serif;
   color: white;
   font-size: 2.8rem;
@@ -342,7 +344,7 @@ nav .sign-in-btn:hover {
   color: #e44c65;
 }
 @media (max-width: 745px) {
-  .div1 .div1-wrapper p {
+  .div1 .div1-content-wrapper p {
     font-size: 1.8rem;
   }
 }
@@ -643,30 +645,6 @@ nav .sign-in-btn:hover {
     font-size: 1.8rem;
   }
 }
-.down-arrow {
-  width: 100px;
-  text-align: center;
-}
-.down-arrow2 {
-  width: 100px;
-  text-align: center;
-}
-.arrow-wrapper {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-.arrow2-wrapper {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
 .unhide {
   display: block;
 }
@@ -786,15 +764,17 @@ nav .sign-in-btn:hover {
   }
 }
 .meet-team-pictures .person .icon-wrapper {
-  font-size: 2em;
+  font-size: 3em;
   color: white;
   padding: 0 10px;
 }
 .meet-team-pictures .person .icon-wrapper a {
   color: white;
 }
-.meet-team-pictures .person .icon-wrapper a .icon-wrapper {
-  color: white;
+@media (max-width: 1160px) {
+  .meet-team-pictures .person .icon-wrapper {
+    font-size: 1.25em;
+  }
 }
 .fav-links {
   color: white;
